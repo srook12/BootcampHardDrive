@@ -1,0 +1,17 @@
+For J-unit testing
+	Create new Java Project
+	After naming, click next
+	Disconnect src from the build path (right click)
+	create src/main/java and src/main/test as new source folders
+	Click finish
+	create packages under each source folder
+	Right click on project folder, choose build path, add library, and use J-Unit
+
+	Create classes in /src/main/java
+
+	Create a Junit test class in /src/main/test. Right click, New-->JUnit Test case or Right Click-->Other search for J-unit.
+		Or use a regular class and import static org.junit.Assert.*;
+
+
+Google assert java for documentation on assert
+

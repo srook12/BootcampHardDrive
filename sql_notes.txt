@@ -1,0 +1,50 @@
+MYSQL:
+
+\c cancels a mysql command when done on the command line
+
+Commands can be multilined
+
+SHOW DATABASES; 
+	displays the list of databases
+
+USE <db>
+	selects a database
+
+CREATE DATABASE <db>; 
+	creates a database
+---------------------------------
+SHOW tables;
+	shows the tables for <db>
+---------------------------------
+LOAD DATA LOCAL INFILE '<path>' INTO TABLE <table> LINES TERMINATED BY '\r\n';
+	loads the tab separated records from the file located at <path> into <table>. Used as an alternative
+	to multiple INSERT INTO statements. The last portion covers windows machines ending lines with \r\n
+---------------------------------
+CURDATE()
+	Function to retrieve the current date
+
+TIMESTAMPDIFF(<unit of time>, <date1>, <date2>);
+	Function that gets the unit of time difference between date1 and date2. <unit of time> can be YEAR, MONTH, DAY, or others.
+
+MONTH(<date>); 
+	Extracts the month from a date
+------------------------------------
+MOD(<value1>, <value2>);
+	Calculates <value1> % <value2>
+
+Use IS NULL or IS NOT NULL when working with NULL entries
+-------------------------------------
+Use LIKE '<pattern>' for pattern matching
+	% accounts for 0 or more characters
+	_ accounts for exactly 1 character
+
+Use REGEXP '<regex>' for regular expressions
+-----------------------------------------------
+select * from information_schema.table_constraints where table_name = '<name>'
+	Lists the constraints found in table <name>
+----------------------------------------------
+create index <name> on <table>(<table column>)
+	Creates an index on a particular column of the table. For performance issues?
+----------------------------------------------
+alter table <table> add constraint <constraint name> foreign key (<column>) references (<alt primary key>)
+	Adds a foreign key constraint
