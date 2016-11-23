@@ -1,0 +1,4 @@
+AssertAsIdentifier, AssertionC, and AssertionD can be compiled using the -source 1.3 option.
+
+Assert can be used as an identifier before 1.4, but isn't recognized as a keyword,
+resulting in errors in the other 4 classes.

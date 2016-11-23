@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<library>
+	<book ISBN="A123">
+		<title>The Trial</title>
+		<author>Franz Kafka</author>
+	</book>
+	<book ISBN="T521">
+		<title>Core Java 2 Fundamentals</title>
+		<author>Cay Horstmann</author>
+		<author>Gary Cornell</author>
+	</book>
+</library>

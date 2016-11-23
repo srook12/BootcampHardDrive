@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>Student Details</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+	var id = getParameterByName("id");
+	var edit = getParameterByName("edit");
+	
+	$(document).ready(function() {
+		
+		$.ajax(
+			{url: "http://localhost:8080/student/" + id 
+		}).then(function(data) {
+			var stu_first_name = $("#stu_first_name");
+			var stu_last_name = $("#stu_last_name");
+			var stu_sat = $("#stu_sat");
+			var stu_gpa = $("#stu_gpa");
+			
+			var id = data["id"];
+			var first_name = data["first_name"];
+			var last_name = data["last_name"];
+			var sat = data["sat"];
+			var gpa = data["gpa"];
+			
+			if(edit === "true") {
+				stu_first_name.append($("<input id=\"first_name\" type=\"text\" value=\"" + first_name + "\" />"));
+				stu_last_name.append($("<input id=\"last_name\" type=\"text\" value=\"" + last_name + "\" />"));
+				stu_sat.append($("<input id=\"sat\" type=\"text\" value=\"" + sat + "\" />"));
+				stu_gpa.append($("<input id=\"gpa\" type=\"text\" value=\"" + gpa + "\" />"));
+				$("#buttons").append($("<button id=\"stu_button\">Update</button>"));
+				
+				$("#buttons").click(function() {
+					first_name = $("#first_name").val();
+					last_name = $("#last_name").val();
+					sat = $("#sat").val();
+					gpa = $("#gpa").val();
+					
+					$.ajax(
+						{url: "http://localhost:8080/update_student/" + id + "/" 
+																	  + first_name + "/"
+																	  + last_name + "/"
+																	  + sat + "/"
+																	  + gpa + "/"
+					});
+				})
+			} else {
+				stu_first_name.append($("<label>" + first_name + "</label>"));
+				stu_last_name.append($("<label>" + last_name + "</label>"));
+				stu_sat.append($("<label>" + sat + "</label>"));
+				stu_gpa.append($("<label>" + gpa + "</label>"));
+			}					
+		})
+		
+	
+	})
+	
+	
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+//]]>
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">First Name:</div>
+		<div id="stu_first_name" class="col-sm-6"></div>
+	</div>
+	<div class="row">&nbsp;</div>
+	<div class="row">
+		<div class="col-sm-6">Last Name:</div>
+		<div id="stu_last_name" class="col-sm-6"></div>
+	</div>
+	<div class="row">&nbsp;</div>
+	<div class="row">
+		<div class="col-sm-6">SAT:</div>
+		<div id="stu_sat" class="col-sm-6"></div>
+	</div>
+	<div class="row">&nbsp;</div>
+	<div class="row">
+		<div class="col-sm-6">GPA:</div>
+		<div id="stu_gpa" class="col-sm-6"></div>
+	</div>
+	<div class="row">&nbsp;</div>
+	<div class="row">
+		<div id="buttons" class="col-sm-12"></div>
+	</div>
+	<div class="row">
+		<a href="student_list">Back to student listings</a>
+	</div>
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+    <head>
+
+		<meta charset="UTF-8" /><meta name="description" />
+		<title>Harford Community College - Form</title>
+        <!--[if IE 7 ]>
+        <script type="text/javascript">
+            window.ie7 = true;
+        </script>
+        <![endif]-->
+
+
+		<link rel="stylesheet" type="text/css" href="/CMS/resources/stylesheets/styles.css">
+		<link rel="stylesheet" type="text/css" href="/CMS/CSS/Forms.css">
+        <script type="text/javascript" src="/CMS/resources/javascript/modernizr.custom.js"></script>
+    	<script type="text/javascript" src="http://use.typekit.net/fnp1ktr.js"></script>
+    	<script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+        <script type="text/javascript" src="/CMS/resources/javascript/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="/CMS/resources/javascript/jquery-init.js"></script>
+        <script type="text/javascript" src="/CMS/resources/javascript/json.js"></script>
+        <script type="text/javascript" src="/CMS/resources/javascript/jquery-content-effects.js"></script>
+        <script type="text/javascript" src="/CMS/resources/javascript/jquery-onload.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="/CMS/CSS/Styles.css">
+       	<script type="text/javascript" src="/CMS/javascript/CMS_Javascript.js"></script>
+       	
+
+<title>Credit Schedule - Enrollment Services - Harford Community College</title>
+<link href="/CMS/CSS/Credit_Schedule.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+function crseDetail(myCRN, myTerm)
+{var xmlHttp;
+try
+  {  // Firefox, Opera 8.0+, Safari
+    xmlHttp=new XMLHttpRequest();  }
+catch (e)
+  {  // Internet Explorer
+    try
+    {    xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");    }
+  catch (e)
+    {    try
+      {      xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");      }
+    catch (e)
+      { alert("Your browser does not support AJAX!");
+        return false;      }
+     }
+  }
+  xmlHttp.onreadystatechange=function()
+    {
+    if(xmlHttp.readyState==4)
+      {
+     	document.getElementById('csDetail').style.visibility = 'hidden';
+		document.getElementById('csDetail').style.display = 'none';
+        if (xmlHttp.responseText.length > 5) { 
+			var iLen = xmlHttp.responseText.length;
+			var strEnd = xmlHttp.responseText.substring(iLen, iLen - 5);
+		} else {
+			var strEnd = xmlHttp.responseText;
+		};
+		if (strEnd=='0-End'||strEnd=='') {
+			if (strEnd=='') {			
+				alert('Unable to complete request.!');		
+			} else {
+				alert('Process aborted due to network congestion.  Please try again later');		
+			};
+		} else {
+			var ScrollTop = document.body.scrollTop;
+			if (ScrollTop == 0)	{if (window.pageYOffset) {ScrollTop=window.pageYOffset;} else {ScrollTop = (document.body.parentElement) ? document.body.parentElement.scrollTop : 0};};
+			if (document.all) {
+			    var scrnwidth = getWidth()-600;
+			    var scrnheight = (getHeight()-800);
+	        } else {
+			    var scrnwidth = getWidth()-600;
+			    var scrnheight = (getHeight()-800);
+	        };
+		    if (scrnwidth <= 0) {scrnwidth = 0};
+		    if (scrnheight <= 0) {scrnwidth = 0};                
+			document.getElementById('csDetail').style.left="20px";
+			document.getElementById('csDetail').style.top=ScrollTop+(scrnheight/2)+"px";
+	      	document.getElementById('csDetail').innerHTML = xmlHttp.responseText;
+	      	document.getElementById('csDetail').style.visibility = 'visible';
+	      	document.getElementById('csDetail').style.display = 'block';
+	      	if (document.all) {
+	      		document.getElementById('my_detail').style.height = document.getElementById('tabDetails').offsetHeight - 12 +'px'
+	      	};
+		}
+      }
+    }
+  var strURLj = '/CMS/Schedule/Ajax/Detail_Ajax.asp?C=' + myCRN + '&T=' + myTerm + '&V=' + Math.random();
+  var ScrollTop = document.body.scrollTop;
+		if (ScrollTop == 0)
+		{
+		    if (window.pageYOffset)
+		        ScrollTop = window.pageYOffset;
+		    else
+		        ScrollTop = (document.body.parentElement) ? document.body.parentElement.scrollTop : 0;
+		};
+		if (document.all) {
+		    var scrnwidth = getWidth()-300;
+		    var scrnheight = getHeight()-500;
+        }
+        else {
+		    var scrnwidth = getWidth()-300;
+		    var scrnheight = getHeight()-500;
+        };
+    if (scrnwidth <= 0) {scrnwidth = 0};
+    if (scrnheight <= 0) {scrnwidth = 0};
+	document.getElementById('csDetail').style.left="120px";
+	document.getElementById('csDetail').style.top=ScrollTop+(scrnheight/2)+"px";
+	if (document.all) {
+		document.getElementById('csDetail').innerHTML = '<table width="300" border="1" cellspacing=1 bgcolor="C0C0C0"><tr><td width="300" align="center" bgcolor="283898"><IFRAME name="my_det0" id="my_det0" style="DISPLAY: block; POSITION: absolute; LEFT: 0; TOP: 0; HEIGHT:70; WIDTH:300; z-index:-20" src="/menus/blank.htm" frameBorder="0" scrolling="no"></IFRAME><br><font face="Arial" size="4" color="FFFFFF">Loading Course Information</font><br><font face="Arial" size="2" color="FFFFFF">This could take a few seconds...</font><br><br></td></tr></table>';
+	} else {
+		document.getElementById('csDetail').innerHTML = '<table width="300" border="1" cellspacing=1 bgcolor="C0C0C0"><tr><td width="300" align="center" bgcolor="283898"><br><font face="Arial" size="4" color="FFFFFF">Loading Course Information</font><br><font face="Arial" size="2" color="FFFFFF">This could take a few seconds...</font><br><br></td></tr></table>';	
+	};
+  document.getElementById('csDetail').style.visibility = 'visible';
+  document.getElementById('csDetail').style.display = 'block';
+  xmlHttp.open("GET",strURLj,true);
+  xmlHttp.send(null);
+  
+  }
+function getWidth() {
+	if (typeof window.innerWidth != 'undefined') {return window.innerWidth;}
+	else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0)
+		{return document.documentElement.clientWidth;} else {return document.getElementsByTagName('body')[0].clientWidth;}
+}
+	
+function getHeight() {
+	if (typeof window.innerWidth != 'undefined')
+	 { return window.innerHeight;}
+	else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0)
+		{ return document.documentElement.clientHeight;}
+		else {return document.getElementsByTagName('body')[0].clientHeight;}
+}
+
+</script>
+
+<SCRIPT Language="JavaScript" type="text/javascript">
+<!-- Ignore this
+var win=null;
+function CrseWindow(mypage){
+pos = 'center';
+h = 500;
+w = 700;
+if(pos=="random"){LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+if(pos=="center"){LeftPosition=(screen.width)?(Number(screen.width)-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
+else if((pos!="center" && pos!="random") || pos==null){LeftPosition=0;TopPosition=20}
+settings='top='+TopPosition+',left='+LeftPosition+',width='+w+',height='+h+',scrollbars=yes,location=no,status=no,menubar=no,toolbar=no,resizable=no';
+win=window.open(mypage,'crseDesc',settings);
+}
+// -->
+</script>
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function selectaplace(form) {
+	var appname= navigator.appName;
+	var appversion=parseInt(navigator.appVersion);
+
+	if (appname == "Netscape" && appversion >= 3) {
+		var formindex=form.select1.selectedIndex;
+		var storage=form.select1.options[formindex].text;
+		if (form.select1.options[formindex].value != "none") {
+			var msg=storage+"You are now being transferred to the -> "+storage;
+			for (var spot=0;spot<msg.length-storage.length;spot++) {
+			var x=msg.substring(spot,msg.length);
+			form.select1.options[formindex].text=x;
+			for(var d=0;d<150;d++) { };
+			}
+			window.location=form.select1.options[formindex].value;
+			form.select1[formindex].text=storage;
+			} 
+		else  {
+			form.select1[formindex].text="Not a real option!";
+			for(var d=0;d<1250;d++) { };
+			form.select1[formindex].text=storage;
+			}
+		
+		}
+	else {
+		var formindex=form.select1.selectedIndex;
+		window.location=form.select1.options[formindex].value;
+   		}
+	}
+	
+function makeMyMenu() {
+document.write ('<select name="select1" onChange="selectaplace(this.form)" size=1>');
+
+
+document.write ('<option value="">Select another Subject...');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ACCT">Accounting</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=AHS">Allied Health Sciences</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ASL">American Sign Language</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ANTH">Anthropology</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ART">Art + Design</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=APL">Assessment for Prior Learning</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ASTR">Astronomy</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=BIO">Biology</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=BA">Business Administration</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=CHEM">Chemistry</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=CMST">Communication Studies</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=CADD">Computer Aided Design & Draft</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=CIS">Computer Information Systems</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=CSI">Computer Science</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=CJ">Criminal Justice</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=DRAM">Drama</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ES">Earth Science</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ECON">Economics</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=EDUC">Education</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ELEC">Electronics</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ENGR">Engineering</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ENGT">Engineering Technology</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ENG">English</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ENV">Environmental Sciences</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=FIN">Finance</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=FS">Forensic Science</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=FR">French</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=GS">General Science</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=GEOG">Geography</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=GER">German</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=HLTH">Health</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=HIST">History</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=HD">Human Development</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ISS">Information Systems Security</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=IDS">Interdisciplinary Studies</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ID">Interior Design</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=MC">Mass Communications</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=MATH">Mathematics</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=MAS">Medical Assisting</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=MUS">Music</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=NURS">Nursing</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=OS">Office Systems</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=ORIE">Orientation</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=PL">Paralegal</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=PHIL">Philosophy</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=PHOT">Photography</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=PE">Physical Education</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=SCI">Physical Science</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=PHYS">Physics</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=PS">Political Science</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=PN">Practical Nursing</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=PSY">Psychology</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=RELG">Religion</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=SOC">Sociology</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=SPAN">Spanish</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=EV">Student Activities</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=SDEV">Student Development</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=THEA">Theatre</OPTION>');document.write ('<option value="http://ww2.harford.edu/CMS/schedule/CR/U_crweb.asp?SemesterChoice=201720&ProgramChoice=VPA">Visual and Performing Arts</OPTION>');
+
+document.write ('</select>');
+}
+
+// End -->
+</SCRIPT>
+
+<script type="text/javascript"> 
+//<![CDATA[
+var theForm = document.forms['form'];
+if (!theForm) {
+    theForm = document.form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+</head>
+<body>
+<div class="aspNetHidden">
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="nS5noaaREnpblrVJ7g2x7feo1Gka6T45a4jEoeZJtEs2MjKbOd_gA4h3hwBfnu7mMdSOA554u6tZJ8sZx7z7SM0qq8QcS3Jq9ub0X2Y8CkEAiPpbBn07CrN_bAL5iIvem7Vf40uUNJGA7P3UoG_KY3E0vqvIYiEFp6sRvHS21ZM1">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgKO2oHjCwKD3ti0BXBcu/UWOfAh4GGwyIffVAC55vaWeJe2x49AwLDQbQZR">
+</div>
+
+<div id="divWhole" style="background: transparent url('/CMS/resources/images/background-body.png') repeat scroll left top;">
+<div class="no-print">
+    <div id="header" class="header">
+		<a href="http://www.harford.edu/"><img class="logo" src="/CMS/resources/images/logo.png" alt="Harford Community College" height="137" width="164"></a>
+		<div class="global-utilities" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl14_ibGo&#39;)">
+	<p class="off-screen">Global utilities:</p>
+    <ul>
+        <li class="has-icon"><a href="http://ww2.harford.edu/Owlmail" class="has-icon" style="background-image: url('/CMS/images/owlmail-logo.png')">Owlmail</a></li>
+        <li class="has-icon"><a href="http://owlnet.harford.edu" class="has-icon" style="background-image: url('/CMS/images/owlnet-logo.png')">Owlnet</a></li>
+        <li><a href="http://www.harford.edu/about/campus-tours-and-events.aspx">Visit</a></li>
+        <li><a href="http://www.harford.edu/admissions/apply-now.aspx">Apply</a></li>
+        <li><a href="http://www.harford.edu/about/offices-and-departments/giving.aspx">Give</a></li>
+        <li class="search">
+            <label for="query" class="off-screen">Search:</label>
+			<form method="post"  action="http://www.harford.edu/search.aspx" id="form">
+				<div class="aspNetHidden">
+					<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+					<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+					<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNTc1Njk5Njk0D2QWBGYPZBYCAggPFgIeB1Zpc2libGVoZAIBEGRkFgYCAw9kFgJmD2QWAmYPZBYEAgEPFgIeC18hSXRlbUNvdW50AgUWCmYPZBYCZg8VBBEgY2xhc3M9Imhhcy1pY29uIh5odHRwOi8vd3cyLmhhcmZvcmQuZWR1L093bG1haWxrIGNsYXNzPSJoYXMtaWNvbiIgc3R5bGU9ImJhY2tncm91bmQtaW1hZ2U6IHVybCgnL34vbWVkaWEvSWNvbnMvb3dsbWFpbC1sb2dvLmFzaHg/dz0yMCZoPTIwJmFzPTBiYz1mZmZmZmYnKSIHT3dsbWFpbGQCAQ9kFgJmDxUEESBjbGFzcz0iaGFzLWljb24iGWh0dHA6Ly9vd2xuZXQuaGFyZm9yZC5lZHVqIGNsYXNzPSJoYXMtaWNvbiIgc3R5bGU9ImJhY2tncm91bmQtaW1hZ2U6IHVybCgnL34vbWVkaWEvSWNvbnMvb3dsbmV0LWxvZ28uYXNoeD93PTIwJmg9MjAmYXM9MGJjPWZmZmZmZicpIgZPd2xuZXRkAgIPZBYCZg8VBAAjL2Fib3V0L2NhbXB1cy10b3Vycy1hbmQtZXZlbnRzLmFzcHgABVZpc2l0ZAIDD2QWAmYPFQQAGi9hZG1pc3Npb25zL2FwcGx5LW5vdy5hc3B4AAVBcHBseWQCBA9kFgJmDxUEACovYWJvdXQvb2ZmaWNlcy1hbmQtZGVwYXJ0bWVudHMvZ2l2aW5nLmFzcHgABEdpdmVkAgIPFQEAZAIJD2QWAmYPZBYCZg9kFgJmD2QWAgIBDw8WAh4LTmF2aWdhdGVVcmwFIy9hYm91dC9vZmZpY2VzLWFuZC1kZXBhcnRtZW50cy5hc3B4ZGQCDQ9kFgICBA9kFgJmD2QWBGYPDxYCHwBnZGQCAg9kFgRmD2QWAmYPZBYCZg9kFgJmD2QWAmYPZBYCZg8VAQBkAgEPZBYCZg9kFgJmD2QWBmYPZBYCZg9kFgJmDxUBAGQCAQ9kFgJmD2QWAmYPFQEAZAICD2QWAmYPZBYCZg8WAh8BAgQWCmYPZBYCZg8VAQ0gb2Zmc2V0IGljb25zZAIBD2QWAgIBD2QWAgIBDxUBB093bG1haWxkAgIPZBYCAgEPZBYCAgEPFQEGT3dsbmV0ZAIDD2QWAgIBD2QWAgIBDxUBFVN0dWRlbnQgU2VsZiBTZXJ2aWNlc2QCBA9kFgICAQ9kFgICAQ8VAQVTT0xBUmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFCmN0bDE0JGliR2/rIM2nEBCWYpQwBfAs8hqZu+nN18GbD8drrzpC+vPpCA==">
+					<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="OXpUfMcW5hWfNKO9XUF6_qplqTRTlY0IWNuL1gdI9ZwM4eJR-9PFx4Hl5Nq_omIQQt22WYJSsyNAcxQ-iZCY6TrPJfySmlUnrErYT54lPQA1">
+					<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgKawZCyDwKD3ti0BYukYMwb4R2yKSwgE4D2ZW0u1TPrPqoAfC4dl9cjjKgX">
+				</div>
+				<input type="text" id="query" name="q" placeholder="Search" value=""><input type="image" name="ctl14$ibGo" id="ctl14_ibGo" data-hover="/CMS/resources/images/button-search_hover.png" src="/CMS/resources/images/button-search.png" alt="Go" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl14$ibGo&quot;, &quot;&quot;, false, &quot;&quot;, &quot;/Search.aspx&quot;, false, false))" style="height:30px;width:30px;"><!--input type="image" src="/resources/images/button-search.png" data-hover="/resources/images/button-search_hover.png" alt="Go" height="30" width="30" /-->
+			</form>
+		</li>
+	</ul>
+</div><div id="audience-menu" class="audience-menu">
+	<p><span class="off-screen">Audience menu </span>for<span class="off-screen">:</span></p>
+	<ul>
+		<li data-ref="24fa59383d0543989c083d4fc594b0c6"><a href="http://www.harford.edu/future-students.aspx">Future Students</a></li>
+		<li data-ref="f9f4e29f69144b3db9e07fd0a9539a24"><a href="http://www.harford.edu/current-students.aspx">Current Students</a></li>
+		<li data-ref="991b2c2d54d543d5bc425f9b5532e459"><a href="http://www.harford.edu/parents.aspx">Parents</a></li>
+		<li data-ref="fde0fd3c2f7d4684b3560d40cd56efe0"><a href="http://www.harford.edu/alumni.aspx">Alumni &amp; Friends</a></li>
+		<li data-ref="910dded77074417693231c52d8e40cbb"><a href="http://www.harford.edu/job-seekers.aspx">Job Seekers</a></li>
+	</ul>
+    <script type="text/javascript" src="/resources/javascript/jquery-audience-menu-1.0.js"></script>
+</div>
+
+	</div>
+            
+	<div id="left-sidebar" class="left-sidebar">
+		<div id="main-menu" class="main-menu static">
+	<h2><a href="#mm">Main Menu <span class="icon">(click to toggle)</span></a></h2>
+	<ul id="mm">
+		<li data-ref="ed3539551a764eb7880d312ccf528f70"><a href="http://www.harford.edu/academics.aspx">Academics</a></li>
+		<li data-ref="71a3c512e4cc4d02a23aa1c17f98e42b"><a href="http://www.harford.edu/admissions.aspx">Admissions</a></li>
+		<li data-ref="94bf85034c2d44549dc729cc512b85f1"><a href="http://www.harford.edu/student-services.aspx">Student Support</a></li>
+		<li data-ref="3d7734df6de74304be9dbf9e7c2f9293"><a href="http://www.harford.edu/continuing-education.aspx">Continuing Education</a></li>
+		<li data-ref="f601ab35001a4b4481c85b83138f6ba8"><a href="http://www.harford.edu/community.aspx">For the Community</a></li>
+		<li data-ref="7c0e1e592855449f9d44660665e3dbcf"><a href="http://www.harford.edu/about.aspx">About HCC</a></li>
+	</ul>
+	<script type="text/javascript" src="/resources/javascript/jquery-main-menu-1.0.js"></script>
+</div>
+<div class="no-print">
+
+		        <p class="section-title"><span class="off-screen">Section: </span>Student Support</p>
+		   		<div id="sub-menu" class="sub-menu">
+				    <p class="off-screen">Student Support menu:</p>
+				    <ul><li><a href="http://www.harford.edu/student-services.aspx">Student Support</a></li><li><a href="http://www.harford.edu/student-services/academic-advising.aspx">Advising, Career &amp; Transfer Services</a></li><li><a href="http://www.harford.edu/student-services/disability-support-services.aspx">Disability Support Services</a></li><li><a href="http://www.harford.edu/student-services/financial-aid.aspx">Financial Aid</a></li><li><a href="http://www.harford.edu/student-services/paying-for-college.aspx">Paying for College</a></li><li class="open"><a href="http://www.harford.edu/student-services/registration-and-records.aspx">Registration &amp; Records</a><ul><li><a href="http://www.harford.edu/student-services/registration-and-records/frequently-asked-questions.aspx">Frequently Asked Questions</a></li><li><a href="http://www.harford.edu/student-services/registration-and-records/how-to-register.aspx">How to Register</a></li><li><a href="http://www.harford.edu/student-services/registration-and-records/when-to-register.aspx">When to Register</a></li><li><a href="http://www.harford.edu/student-services/registration-and-records/requesting-a-transcript.aspx">Requesting a Transcript</a></li><li><a href="http://www.harford.edu/student-services/registration-and-records/requesting-verification-of-enrollment.aspx">Requesting Verification of Enrollment</a></li><li class="open"><a href="http://www.harford.edu/student-services/registration-and-records/schedule-of-classes.aspx" class="active"><span>(current)</span>Schedule of Classes</a></li><li><a href="http://www.harford.edu/student-services/registration-and-records/transferring-to-hcc.aspx">Transferring to HCC</a></li><li><a href="http://www.harford.edu/student-services/registration-and-records/graduation-and-commencement.aspx">Graduation and Commencement</a></li><li><a href="http://www.harford.edu/student-services/registration-and-records/forms.aspx">Forms</a></li></ul></li><li><a href="http://www.harford.edu/student-services/student-activities.aspx">Student Activities</a></li><li><a href="http://www.harford.edu/student-services/career-services.aspx">Career Services</a></li><li><a href="http://www.harford.edu/student-services/student-intervention-services.aspx">Student Intervention Services</a></li><li><a href="http://www.harford.edu/student-services/student-rights-and-responsibilities.aspx">Student Rights &amp; Responsibilities: Code of Conduct</a></li><li><a href="http://www.harford.edu/student-services/support-for-military-and-veterans.aspx">Support for Military &amp; Veterans</a></li><li><a href="http://www.harford.edu/student-services/testing.aspx">Test Center</a></li><li><a href="http://www.harford.edu/student-services/learning-center.aspx">Learning Center</a></li><li><a href="http://www.harford.edu/student-services/student-services-department-listing.aspx">Student Services Department Listing</a></li></ul>
+				</div>
+		
+</div>
+	</div>
+</div>
+    <div id="content-area" class="content-area" style="display:inline-block;background-color:#FCFCF8;border:0px;padding:0px 0px 20px 0px;">
+
+
+<h1>Credit Schedule of Classes <span style="font-size:70%;padding-top:7px;float:right;padding-right:10px">Spring 2017</span></h1> 
+
+<div id="csDetail" style="position:absolute; top:200px; left:350px; z-index:99; visibility:hidden; display:none">
+	<table width="300" border="0" bgcolor="FF9999"><tr><td width="100" align="center">
+	<IFRAME name="my_det0" id="my_det0" style="DISPLAY: block; POSITION: absolute; LEFT: auto; TOP: auto; HEIGHT:100%; WIDTH:100%; z-index:-20" src="/menus/blank.htm" frameBorder="0" scrolling="no"></IFRAME>
+	<br>Loading<br></td></tr></table>
+</div>
+<form>
+<table border="0" width="620" cellspacing="0" cellpadding="8" style="border-collapse: collapse;margin-top:5px;" bordercolor="#111111" align="center">
+	<tr>
+		<td width="50%" height="23px"><a class="link_big" href="/cms/schedule/CR_CourseMenu.asp">... Return to subject listings</a></TD>
+		<TD width="50%" style="text-align:right"><a class="link_big" href="http://www.harford.edu/About/Calendar.aspx">Academic Calendar</a></TD>
+	</tr>
+    <tr>
+    	<TD colspan="2" style="padding-top:8px"><font color='#666666'><span class="text14" style='background-color: #F0F0F0'>Note: Sections highlighted in gray have reached full enrollment and are closed.</span></font>
+			<table width='100%' style='border-top: 1px solid #000000; border-bottom: 1px solid #000000; margin-top: 10px;' bgcolor='E0E0EF'>
+				<tr>
+					<td width="22" align="right"><img src='/CMS/schedule/images/onli.gif' alt='Online Courses' border='0' style="vertical-align: middle;"></td><td width='50' style="line-height:7px;padding-left:5px;"><a href='/CMS/schedule/CR/U_crweb_description.asp?Q=ONLI' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Online<br>Courses</a></td>
+					<td width="20" align="right"><img src='/CMS/schedule/images/hybr.gif' alt='Hybrid Courses' border='0' style="vertical-align: middle;"></td><td width='55' style="line-height:7px;padding-left:5px;"><a href='/CMS/schedule/CR/U_crweb_description.asp?Q=HYBR' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Hybrid<br>Courses</a></td>
+					<td width="20" align="right"><img src='/CMS/schedule/images/hnrs.gif' alt='Honors Courses' border='0' style="vertical-align: middle;"></td><td width='52' style="line-height:7px;padding-left:5px;"><a href='/CMS/schedule/CR/U_crweb_description.asp?Q=HNRS' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Honors<br>Courses</a></td>
+					<td width="25" align="right"><img src='/CMS/schedule/images/serv.gif' alt='Service Learning Courses' border='0' style="vertical-align: middle;"></td><td width='113' style="line-height:7px;padding-left:5px;"><a href='/CMS/schedule/CR/U_crweb_description.asp?Q=SERV' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Service-Learning<br>Courses</a></td>
+					<td width="21" align="right"><img src='/CMS/schedule/images/comp.gif' alt='Compressed Courses' border='0' style="vertical-align: middle;"></td><td width='70' style="line-height:7px;padding-left:5px;"><a href='/CMS/schedule/CR/U_crweb_description.asp?Q=COMP' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Compressed<br>Courses</a></td>
+					<td width="20" align="right"><img src="/CMS/schedule/images/Link.gif" alt='Linked Classes' border='0' style="vertical-align: middle;"></td><td width='60' style="line-height:7px;padding-left:5px;"><a href='/CMS/schedule/CR/U_crweb_description.asp?Q=LINK' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Learning<br>Communities</a></td>
+				</tr>
+			</table>
+			<br>
+	<center><font face='Verdana' size='5' color='#03416E'><B>English</B></font></center>
+	<DIV align="center" style="padding-bottom: 10px;">
+		<SCRIPT LANGUAGE="JavaScript">makeMyMenu();</script>
+	</DIV>
+
+	<div class="text_base">
+A *3* or *4* indicates courses are offered for attempted credit but will not count toward earned credit.  These 3 - or 4 - credit equivalent courses are used in determing enrollment status and tuition billing.  Additional requirement of at least one hour per week, in addition to class time, is requried in the Test Center to complete tests. A *1*, *3* or *4* indicates courses are offered for attempted credit but will not count toward earned credit. These 1- 3- or 4- credit equivalent courses are used in determining enrollment status and tuition billing. Additional requirement of at least one hour per week, in addition to class time, is required in the Test Center to  complete tests. <br><br>
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 001: Introductory Writing
+				&nbsp;&nbsp;* 3 * credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=001&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20725','201720');return false;" style='font-weight:bold'>20725</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:00  - 9:55 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Fallston Hall,&nbsp;Rm.&nbsp;204</td><td width='90px' valign='top' Class='dtls1'>K. Jones<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20728','201720');return false;" style='font-weight:bold'>20728</a></td><td width='15px' valign='top' Class='dtls1'>02</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Fallston Hall,&nbsp;Rm.&nbsp;204</td><td width='90px' valign='top' Class='dtls1'></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20730','201720');return false;" style='font-weight:bold'>20730</a></td><td width='15px' valign='top' Class='dtls1'>03</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>7:00  - 8:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>M. McLean<br></td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> </font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 002: Reading Power and Comprehension
+				&nbsp;&nbsp;* 3 * credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=002&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20732','201720');return false;" style='font-weight:bold'>20732</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>10:10  - 11:05 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Fallston Hall,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>E. Holmes<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20733','201720');return false;" style='font-weight:bold'>20733</a></td><td width='15px' valign='top' Class='dtls1'>02</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:20 AM - 12:15 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Fallston Hall,&nbsp;Rm.&nbsp;204</td><td width='90px' valign='top' Class='dtls1'>E. Holmes<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20735','201720');return false;" style='font-weight:bold'>20735</a></td><td width='15px' valign='top' Class='dtls1'>03</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Fallston Hall,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>P. Hardy-Cyran<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20737','201720');return false;" style='font-weight:bold'>20737</a></td><td width='15px' valign='top' Class='dtls1'>04</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>7:00  - 8:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;104</td><td width='90px' valign='top' Class='dtls1'>D. Cuba<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 003: Reading and Understanding College Textbooks
+				&nbsp;&nbsp;* 3 * credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=003&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20740','201720');return false;" style='font-weight:bold'>20740</a></td><td width='15px' valign='top' Class='dtls12'>01</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>T. Clark<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20740 is an online course.  For information, contact&nbsp;Theophilus Clark at <a href='mailto:thclark@harford.edu'>thclark@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20741','201720');return false;" style='font-weight:bold'>20741</a></td><td width='15px' valign='top' Class='dtls1'>02</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>10:10  - 11:05 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>T. Clark<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20746','201720');return false;" style='font-weight:bold'>20746</a></td><td width='15px' valign='top' Class='dtls1'>03</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:20 AM - 12:15 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>T. Clark<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20747','201720');return false;" style='font-weight:bold'>20747</a></td><td width='15px' valign='top' Class='dtls1'>04</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>1:40  - 3:00 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;111</td><td width='90px' valign='top' Class='dtls1'>N. Monroe<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20748','201720');return false;" style='font-weight:bold'>20748</a></td><td width='15px' valign='top' Class='dtls1'>05</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Joppa Hall,&nbsp;Rm.&nbsp;002</td><td width='90px' valign='top' Class='dtls1'>E. Holmes<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20749','201720');return false;" style='font-weight:bold'>20749</a></td><td width='15px' valign='top' Class='dtls1'>06</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Joppa Hall,&nbsp;Rm.&nbsp;004</td><td width='90px' valign='top' Class='dtls1'>E. Holmes<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20750','201720');return false;" style='font-weight:bold'>20750</a></td><td width='15px' valign='top' Class='dtls1'>07</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>2:10  - 3:30 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;241</td><td width='90px' valign='top' Class='dtls1'>S. Allen<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20751','201720');return false;" style='font-weight:bold'>20751</a></td><td width='15px' valign='top' Class='dtls1'>08</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>6:25  - 7:45 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>K. Murray<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 012: Basic Writing
+				&nbsp;&nbsp;* 3 * credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=012&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=LINK' onclick='CrseWindow(this.href);return false' onfocus=this.blur()><img src='/CMS/schedule/images/link.gif' alt='Learning Community' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20753','201720');return false;" style='font-weight:bold'>20753</a></td><td width='15px' valign='top' Class='dtls12'>01</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls12'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls12'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls12'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls12'>L. Tittle<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20753 is linked to CRN 21201 (ENG 101).  This section is&nbsp;for students who have completed ENG 001 or scored between&nbsp;58-89 on the English portion of the Accuplacer test.  This&nbsp;option allows for enrollment in ENG 012 and ENG 101 in the&nbsp;same semester. For more information, contact Dr. Lisa Tittle&nbsp;at 443-412-2104 or <a href='mailto:ltittle@harford.edu'>ltittle@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20755','201720');return false;" style='font-weight:bold'>20755</a></td><td width='15px' valign='top' Class='dtls1'>02</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:00  - 9:55 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;113</td><td width='90px' valign='top' Class='dtls1'>C. Jones<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20756','201720');return false;" style='font-weight:bold'>20756</a></td><td width='15px' valign='top' Class='dtls12'>03</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls12'>12:30  - 1:25 PM</td><td width='80px' valign='top' Class='dtls12'>M, W, F</td><td width='137px' valign='top' Class='dtls12'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls12'>J. Jacobs<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20756 is linked to CRN 21302 (ENG 101).  This section is&nbsp;for students who have completed ENG 001 or scored between&nbsp;58-89 on the English portion of the Accuplacer test.  This&nbsp;option allows for enrollment in ENG 012 and ENG 101 in the&nbsp;same semester.  For more information, contact Jennifer&nbsp;Jacobs at 443-412-2076 or <a href='mailto:jjacobs@harford.edu'>jjacobs@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20757','201720');return false;" style='font-weight:bold'>20757</a></td><td width='15px' valign='top' Class='dtls1'>04</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>1:40  - 3:00 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>J. Jacobs<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20759','201720');return false;" style='font-weight:bold'>20759</a></td><td width='15px' valign='top' Class='dtls1'>05</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>8:00  - 9:20 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>K. DiDomenico<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20761','201720');return false;" style='font-weight:bold'>20761</a></td><td width='15px' valign='top' Class='dtls1'>06</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>7:50  - 9:10 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;113</td><td width='90px' valign='top' Class='dtls1'>K. Lohinski<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20763','201720');return false;" style='font-weight:bold'>20763</a></td><td width='15px' valign='top' Class='dtls1'>07</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>K. Lohinski<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20764','201720');return false;" style='font-weight:bold'>20764</a></td><td width='15px' valign='top' Class='dtls1'>08</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:35  - 1:55 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;113</td><td width='90px' valign='top' Class='dtls1'>J. Jacobs<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20765','201720');return false;" style='font-weight:bold'>20765</a></td><td width='15px' valign='top' Class='dtls1'>09</td><td width='60px' valign='top' Class='dtls1'>13 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:30  - 2:00 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Joppa Hall,&nbsp;Rm.&nbsp;004</td><td width='90px' valign='top' Class='dtls1'>E. Holmes<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20769','201720');return false;" style='font-weight:bold'>20769</a></td><td width='15px' valign='top' Class='dtls1'>10</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>2:10  - 3:30 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;113</td><td width='90px' valign='top' Class='dtls1'>J. Jacobs<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21277','201720');return false;" style='font-weight:bold'>21277</a></td><td width='15px' valign='top' Class='dtls1'>11</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:00  - 11:50 AM</td><td width='80px' valign='top' Class='dtls1'>Sat.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21301','201720');return false;" style='font-weight:bold'>21301</a></td><td width='15px' valign='top' Class='dtls1'>14</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;113</td><td width='90px' valign='top' Class='dtls1'>K. Lohinski<br></td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> </font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 018: Integrated Reading and Writing
+				&nbsp;&nbsp;* 4 * credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=018&Hours=4' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20772','201720');return false;" style='font-weight:bold'>20772</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:20 AM - 1:15 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;104</td><td width='90px' valign='top' Class='dtls1'>K. Lohinski<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 084: Special Topics: Associated Reading and Writing
+				&nbsp;&nbsp;* 4 * credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=084&Hours=4' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20777','201720');return false;" style='font-weight:bold'>20777</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:35  - 2:30 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>L. Tittle<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 101: English Composition (GE)
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=101&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20501','201720');return false;" style='font-weight:bold'>20501</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>7:50  - 8:45 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>A. Sipos<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20504','201720');return false;" style='font-weight:bold'>20504</a></td><td width='15px' valign='top' Class='dtls1'>02</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>7:50  - 8:45 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;209</td><td width='90px' valign='top' Class='dtls1'>P. Runge<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20506','201720');return false;" style='font-weight:bold'>20506</a></td><td width='15px' valign='top' Class='dtls1'>03</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:00  - 9:55 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;103</td><td width='90px' valign='top' Class='dtls1'>D. Miller<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20507','201720');return false;" style='font-weight:bold'>20507</a></td><td width='15px' valign='top' Class='dtls1'>04</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:00  - 9:55 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20508','201720');return false;" style='font-weight:bold'>20508</a></td><td width='15px' valign='top' Class='dtls1'>05</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>10:10  - 11:05 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>L. Fox<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20510','201720');return false;" style='font-weight:bold'>20510</a></td><td width='15px' valign='top' Class='dtls1'>06</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>10:10  - 11:05 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;103</td><td width='90px' valign='top' Class='dtls1'>D. Miller<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20511','201720');return false;" style='font-weight:bold'>20511</a></td><td width='15px' valign='top' Class='dtls1'>07</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>10:10  - 11:05 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20512','201720');return false;" style='font-weight:bold'>20512</a></td><td width='15px' valign='top' Class='dtls1'>08</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:20 AM - 12:15 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>L. Fox<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20513','201720');return false;" style='font-weight:bold'>20513</a></td><td width='15px' valign='top' Class='dtls1'>09</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:20 AM - 12:15 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;103</td><td width='90px' valign='top' Class='dtls1'>D. Miller<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20514','201720');return false;" style='font-weight:bold'>20514</a></td><td width='15px' valign='top' Class='dtls1'>10</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:20 AM - 12:15 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20520','201720');return false;" style='font-weight:bold'>20520</a></td><td width='15px' valign='top' Class='dtls1'>11</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:30  - 1:25 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;103</td><td width='90px' valign='top' Class='dtls1'>K. Backhaus<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20521','201720');return false;" style='font-weight:bold'>20521</a></td><td width='15px' valign='top' Class='dtls1'>12</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:30  - 1:25 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20522','201720');return false;" style='font-weight:bold'>20522</a></td><td width='15px' valign='top' Class='dtls1'>13</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>1:40  - 3:00 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>G. Butler<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20523','201720');return false;" style='font-weight:bold'>20523</a></td><td width='15px' valign='top' Class='dtls1'>14</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>3:15  - 4:35 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>G. Butler<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20524','201720');return false;" style='font-weight:bold'>20524</a></td><td width='15px' valign='top' Class='dtls1'>15</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>S. West<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20525','201720');return false;" style='font-weight:bold'>20525</a></td><td width='15px' valign='top' Class='dtls1'>16</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;103</td><td width='90px' valign='top' Class='dtls1'>S. West<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20526','201720');return false;" style='font-weight:bold'>20526</a></td><td width='15px' valign='top' Class='dtls12'>17</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls12'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls12'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls12'>Bel Air Hall,&nbsp;Rm.&nbsp;234</td><td width='90px' valign='top' Class='dtls12'>C. Webster<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20526 is a section of composition in which all writing&nbsp;and reading assignments will focus on topics related to the&nbsp;environment.  For information, contact Colleen Webster at&nbsp;<a href='mailto:cwebster@harford.edu'>cwebster@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20527','201720');return false;" style='font-weight:bold'>20527</a></td><td width='15px' valign='top' Class='dtls1'>18</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;104</td><td width='90px' valign='top' Class='dtls1'>A. Zinn<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20528','201720');return false;" style='font-weight:bold'>20528</a></td><td width='15px' valign='top' Class='dtls1'>19</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;104</td><td width='90px' valign='top' Class='dtls1'>J. Dyer<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20529','201720');return false;" style='font-weight:bold'>20529</a></td><td width='15px' valign='top' Class='dtls1'>20</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:35  - 1:55 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;103</td><td width='90px' valign='top' Class='dtls1'>A. McGlumphy<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20530','201720');return false;" style='font-weight:bold'>20530</a></td><td width='15px' valign='top' Class='dtls1'>21</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:35  - 1:55 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>P. Gant<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20531','201720');return false;" style='font-weight:bold'>20531</a></td><td width='15px' valign='top' Class='dtls1'>22</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:35  - 1:55 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;241</td><td width='90px' valign='top' Class='dtls1'>A. Zinn<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20532','201720');return false;" style='font-weight:bold'>20532</a></td><td width='15px' valign='top' Class='dtls1'>23</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>2:10  - 3:30 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;104</td><td width='90px' valign='top' Class='dtls1'>S. Meyer<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20533','201720');return false;" style='font-weight:bold'>20533</a></td><td width='15px' valign='top' Class='dtls1'>24</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>2:10  - 3:30 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>K. Fleming<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20534','201720');return false;" style='font-weight:bold'>20534</a></td><td width='15px' valign='top' Class='dtls1'>25</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>3:45  - 5:05 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>A. McGlumphy<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20643','201720');return false;" style='font-weight:bold'>20643</a></td><td width='15px' valign='top' Class='dtls1'>26</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:00  - 11:50 AM</td><td width='80px' valign='top' Class='dtls1'>Sat.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>S. Kalwa<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20644','201720');return false;" style='font-weight:bold'>20644</a></td><td width='15px' valign='top' Class='dtls12'>27</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'><span style='font-size:10px;font-family:Arial Narrow;'>M. Brock-Cancellieri<br></span></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20644 is an online course.  For information, contact&nbsp;Mark Brock-Cancellieri at <a href='mailto:mcancellieri@harford.edu'>mcancellieri@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20646','201720');return false;" style='font-weight:bold'>20646</a></td><td width='15px' valign='top' Class='dtls1'>29</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;234</td><td width='90px' valign='top' Class='dtls1'>G. Butler<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20647','201720');return false;" style='font-weight:bold'>20647</a></td><td width='15px' valign='top' Class='dtls1'>30</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>3:15  - 4:35 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>K. Backhaus<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20648','201720');return false;" style='font-weight:bold'>20648</a></td><td width='15px' valign='top' Class='dtls12'>31</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>M. Puller<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20648 is an online course.  For information, contact&nbsp;Meredyth Puller at <a href='mailto:mpuller@harford.edu'>mpuller@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20649','201720');return false;" style='font-weight:bold'>20649</a></td><td width='15px' valign='top' Class='dtls1'>32</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>6:25  - 7:45 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;241</td><td width='90px' valign='top' Class='dtls1'>B. Stiffler<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20650','201720');return false;" style='font-weight:bold'>20650</a></td><td width='15px' valign='top' Class='dtls1'>33</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>7:00  - 8:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'></td></tr><tr Class='dtls122'><td width='25px' valign='top' Class='dtls122' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=HYBR' onclick='CrseWindow(this.href);return false' onfocus=this.blur()><img src='/CMS/schedule/images/hybr.gif' alt='Hybrid Class' border='0'></a></td><td width='38px' valign='top' Class='dtls122'><a href='#' class='link_small' onclick="crseDetail('21105','201720');return false;" style='font-weight:bold'>21105</a></td><td width='15px' valign='top' Class='dtls122'>34</td><td width='60px' valign='top' Class='dtls122'>15 Weeks</td><td class='dtls122' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls122'></td><td width='80px' valign='top' Class='dtls122'></td><td width='137px' valign='top' Class='dtls122'>Hybrid Course</td><td width='90px' valign='top' Class='dtls122'>K. Keen<br></td></tr><tr Class='dtls123'><td colspan=5 align=right valign='top' Class='dtls123'><font color=B0B0B0>Continued . . .&nbsp;&nbsp;&nbsp;&nbsp;</font></td><td width='130px' valign='top' Class='dtls123'>5:30  - 7:45 PM</td><td width='80px' valign='top' Class='dtls123'>Mon.</td><td width='150px' valign='top' Class='dtls123'>Aberdeen Proving Ground</td><td width='90px' valign='top' Class='dtls123'>&nbsp;</td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 21105 is a hybrid course.  For information, contact&nbsp;Kelly Keen at <a href='mailto:kkeen@harford.edu'>kkeen@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=LINK' onclick='CrseWindow(this.href);return false' onfocus=this.blur()><img src='/CMS/schedule/images/link.gif' alt='Learning Community' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('21201','201720');return false;" style='font-weight:bold'>21201</a></td><td width='15px' valign='top' Class='dtls12'>35</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls12'>7:50  - 9:10 AM</td><td width='80px' valign='top' Class='dtls12'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls12'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls12'>L. Tittle<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 21201 is linked to CRN 20753 (ENG 012).  This section is&nbsp;for students who have completed ENG 001 or scored between&nbsp;58-89 on the English portion of the Accuplacer test.  This&nbsp;option allows for enrollment in ENG 012 and ENG 101 in the&nbsp;same semester. For more information, contact Dr. Lisa Tittle&nbsp;at 443-412-2104 or <a href='mailto:ltittle@harford.edu'>ltittle@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21202','201720');return false;" style='font-weight:bold'>21202</a></td><td width='15px' valign='top' Class='dtls1'>36</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>7:50  - 9:10 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>L. Tittle<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21203','201720');return false;" style='font-weight:bold'>21203</a></td><td width='15px' valign='top' Class='dtls1'>37</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>7:50  - 8:45 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Library,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>K. Lohinski<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21274','201720');return false;" style='font-weight:bold'>21274</a></td><td width='15px' valign='top' Class='dtls1'>38</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>5:20  - 8:10 PM</td><td width='80px' valign='top' Class='dtls1'>Tues.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>S. Kalwa<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('21279','201720');return false;" style='font-weight:bold'>21279</a></td><td width='15px' valign='top' Class='dtls12'>39</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>S. Muaddi Darraj<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 21279 is an online course.  For information, contact&nbsp;Susan Muaddi Darraj at <a href='mailto:smuaddid@harford.edu'>smuaddid@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('21280','201720');return false;" style='font-weight:bold'>21280</a></td><td width='15px' valign='top' Class='dtls12'>40</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>S. Muaddi Darraj<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 21280 is an online course.  For information, contact&nbsp;Susan Muaddi Darraj at <a href='mailto:smuaddid@harford.edu'>smuaddid@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('21302','201720');return false;" style='font-weight:bold'>21302</a></td><td width='15px' valign='top' Class='dtls12'>44</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls12'>11:20 AM - 12:15 PM</td><td width='80px' valign='top' Class='dtls12'>M, W, F</td><td width='137px' valign='top' Class='dtls12'>Bel Air Hall,&nbsp;Rm.&nbsp;101</td><td width='90px' valign='top' Class='dtls12'>J. Jacobs<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 21302 is linked to CRN 20756 (ENG 012).  This section is&nbsp;for students who have completed ENG 001 or scored between&nbsp;58-89 on the English portion of the Accuplacer test.  This&nbsp;option allows for enrollment in ENG 012 and ENG 101 in the&nbsp;same semester.  For more information, contact Jennifer&nbsp;Jacobs at 443-412-2076 or <a href='mailto:jjacobs@harford.edu'>jjacobs@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21303','201720');return false;" style='font-weight:bold'>21303</a></td><td width='15px' valign='top' Class='dtls1'>45</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:20 AM - 12:15 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;101</td><td width='90px' valign='top' Class='dtls1'>J. Jacobs<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 102: English Composition and Literature
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=102&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20651','201720');return false;" style='font-weight:bold'>20651</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;208</td><td width='90px' valign='top' Class='dtls1'>J. Dyer<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20652','201720');return false;" style='font-weight:bold'>20652</a></td><td width='15px' valign='top' Class='dtls1'>02</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:00  - 9:55 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;209</td><td width='90px' valign='top' Class='dtls1'>J. Salvatore<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20653','201720');return false;" style='font-weight:bold'>20653</a></td><td width='15px' valign='top' Class='dtls1'>03</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:30  - 1:25 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>G. Butler<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=HNRS' onclick='CrseWindow(this.href);return false' onfocus=this.blur()><img src='/CMS/schedule/images/hnrs.gif' alt='Honors Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20654','201720');return false;" style='font-weight:bold'>20654</a></td><td width='15px' valign='top' Class='dtls12'>04</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls12'>7:50  - 9:10 AM</td><td width='80px' valign='top' Class='dtls12'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls12'>Havre de Grace,&nbsp;Rm.&nbsp;208</td><td width='90px' valign='top' Class='dtls12'><span style='font-size:10px;font-family:Arial Narrow;'>M. Brock-Cancellieri<br></span></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20654 is a designated Honors course.  For information,&nbsp;contact Mark Brock-Cancellieri at <a href='mailto:mcancellieri@harford.edu'>mcancellieri@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20655','201720');return false;" style='font-weight:bold'>20655</a></td><td width='15px' valign='top' Class='dtls1'>05</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:35  - 1:55 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>E. Jensen<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20656','201720');return false;" style='font-weight:bold'>20656</a></td><td width='15px' valign='top' Class='dtls1'>06</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>2:10  - 3:30 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>E. Jensen<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20657','201720');return false;" style='font-weight:bold'>20657</a></td><td width='15px' valign='top' Class='dtls12'>07</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls12'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls12'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls12'>Bel Air Hall,&nbsp;Rm.&nbsp;103</td><td width='90px' valign='top' Class='dtls12'>C. Webster<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20657 is a section of composition in which all writing&nbsp;and reading assignments will focus on topics related to the&nbsp;environment.  For information, contact Colleen Webster at&nbsp;<a href='mailto:cwebster@harford.edu'>cwebster@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20658','201720');return false;" style='font-weight:bold'>20658</a></td><td width='15px' valign='top' Class='dtls12'>08</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>M. Puller<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20658 is an online course.  For information, contact&nbsp;Meredyth Puller at <a href='mailto:mpuller@harford.edu'>mpuller@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20659','201720');return false;" style='font-weight:bold'>20659</a></td><td width='15px' valign='top' Class='dtls1'>09</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>3:45  - 5:05 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>S. Meyer<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20660','201720');return false;" style='font-weight:bold'>20660</a></td><td width='15px' valign='top' Class='dtls1'>10</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>6:25  - 7:45 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;208</td><td width='90px' valign='top' Class='dtls1'>S. Kalwa<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20661','201720');return false;" style='font-weight:bold'>20661</a></td><td width='15px' valign='top' Class='dtls1'>11</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>5:20  - 6:40 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>A. McGlumphy<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20662','201720');return false;" style='font-weight:bold'>20662</a></td><td width='15px' valign='top' Class='dtls1'>12</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;243</td><td width='90px' valign='top' Class='dtls1'>P. Gant<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21283','201720');return false;" style='font-weight:bold'>21283</a></td><td width='15px' valign='top' Class='dtls1'>14</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>10:10  - 11:05 AM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;208</td><td width='90px' valign='top' Class='dtls1'>G. Butler<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 107: Introduction to Creative Writing
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=107&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20686','201720');return false;" style='font-weight:bold'>20686</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>L. Fox<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20687','201720');return false;" style='font-weight:bold'>20687</a></td><td width='15px' valign='top' Class='dtls12'>02</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>S. Muaddi Darraj<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20687 is an online course.  For information, contact&nbsp;Susan Muaddi Darraj at <a href='mailto:smuaddid@harford.edu'>smuaddid@harford.edu</a>.&nbsp;</td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 109: English Composition: Research Writing
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=109&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20688','201720');return false;" style='font-weight:bold'>20688</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:20 AM - 12:15 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;212</td><td width='90px' valign='top' Class='dtls1'>M. Conklin<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20689','201720');return false;" style='font-weight:bold'>20689</a></td><td width='15px' valign='top' Class='dtls1'>02</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:30  - 1:25 PM</td><td width='80px' valign='top' Class='dtls1'>M, W, F</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;113</td><td width='90px' valign='top' Class='dtls1'>M. Conklin<br></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20690','201720');return false;" style='font-weight:bold'>20690</a></td><td width='15px' valign='top' Class='dtls1'>03</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;209</td><td width='90px' valign='top' Class='dtls1'><span style='font-size:10px;font-family:Arial Narrow;'>M. Brock-Cancellieri<br></span></td></tr><tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20691','201720');return false;" style='font-weight:bold'>20691</a></td><td width='15px' valign='top' Class='dtls1'>04</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;209</td><td width='90px' valign='top' Class='dtls1'><span style='font-size:10px;font-family:Arial Narrow;'>M. Brock-Cancellieri<br></span></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20692','201720');return false;" style='font-weight:bold'>20692</a></td><td width='15px' valign='top' Class='dtls12'>05</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>C. Fischer<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20692 is an online course.  For information, contact&nbsp;Cindy Fischer at <a href='mailto:cfischer@harford.edu'>cfischer@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls122'><td width='25px' valign='top' Class='dtls122' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=HYBR' onclick='CrseWindow(this.href);return false' onfocus=this.blur()><img src='/CMS/schedule/images/hybr.gif' alt='Hybrid Class' border='0'></a></td><td width='38px' valign='top' Class='dtls122'><a href='#' class='link_small' onclick="crseDetail('20693','201720');return false;" style='font-weight:bold'>20693</a></td><td width='15px' valign='top' Class='dtls122'>06</td><td width='60px' valign='top' Class='dtls122'>15 Weeks</td><td class='dtls122' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls122'></td><td width='80px' valign='top' Class='dtls122'></td><td width='137px' valign='top' Class='dtls122'>Hybrid Course</td><td width='90px' valign='top' Class='dtls122'>S. West<br></td></tr><tr Class='dtls123'><td colspan=5 align=right valign='top' Class='dtls123'><font color=B0B0B0>Continued . . .&nbsp;&nbsp;&nbsp;&nbsp;</font></td><td width='130px' valign='top' Class='dtls123'>2:10  - 3:30 PM</td><td width='80px' valign='top' Class='dtls123'>Tues.</td><td width='150px' valign='top' Class='dtls123'>Bel Air Hall,&nbsp;Rm.&nbsp;104</td><td width='90px' valign='top' Class='dtls123'>&nbsp;</td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20693 is a hybrid course.  For information, contact&nbsp;Scott West at <a href='mailto:swest@harford.edu'>swest@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls122'><td width='25px' valign='top' Class='dtls122' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=HYBR' onclick='CrseWindow(this.href);return false' onfocus=this.blur()><img src='/CMS/schedule/images/hybr.gif' alt='Hybrid Class' border='0'></a></td><td width='38px' valign='top' Class='dtls122'><a href='#' class='link_small' onclick="crseDetail('20694','201720');return false;" style='font-weight:bold'>20694</a></td><td width='15px' valign='top' Class='dtls122'>07</td><td width='60px' valign='top' Class='dtls122'>15 Weeks</td><td class='dtls122' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls122'></td><td width='80px' valign='top' Class='dtls122'></td><td width='137px' valign='top' Class='dtls122'>Hybrid Course</td><td width='90px' valign='top' Class='dtls122'>S. West<br></td></tr><tr Class='dtls123'><td colspan=5 align=right valign='top' Class='dtls123'><font color=B0B0B0>Continued . . .&nbsp;&nbsp;&nbsp;&nbsp;</font></td><td width='130px' valign='top' Class='dtls123'>2:10  - 3:30 PM</td><td width='80px' valign='top' Class='dtls123'>Thur.</td><td width='150px' valign='top' Class='dtls123'>Bel Air Hall,&nbsp;Rm.&nbsp;104</td><td width='90px' valign='top' Class='dtls123'>&nbsp;</td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20694 is a hybrid course.  For information, contact&nbsp;Scott West at <a href='mailto:swest@harford.edu'>swest@harford.edu</a>.&nbsp;</td></tr><tr Class='dtls122'><td width='25px' valign='top' Class='dtls122' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=LINK' onclick='CrseWindow(this.href);return false' onfocus=this.blur()><img src='/CMS/schedule/images/link.gif' alt='Learning Community' border='0'></a></td><td width='38px' valign='top' Class='dtls122'><a href='#' class='link_small' onclick="crseDetail('21165','201720');return false;" style='font-weight:bold'>21165</a></td><td width='15px' valign='top' Class='dtls122'>08</td><td width='60px' valign='top' Class='dtls122'>15 Weeks</td><td class='dtls122' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls122'></td><td width='80px' valign='top' Class='dtls122'></td><td width='137px' valign='top' Class='dtls122'>Hybrid Course</td><td width='90px' valign='top' Class='dtls122'>S. West<br></td></tr><tr Class='dtls123'><td colspan=5 align=right valign='top' Class='dtls123'><font color=B0B0B0>Continued . . .&nbsp;&nbsp;&nbsp;&nbsp;</font></td><td width='130px' valign='top' Class='dtls123'>12:30  - 1:25 PM</td><td width='80px' valign='top' Class='dtls123'>Mon., Wed.</td><td width='150px' valign='top' Class='dtls123'>Bel Air Hall,&nbsp;Rm.&nbsp;235</td><td width='90px' valign='top' Class='dtls123'>&nbsp;</td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 21165, ENG 109-08 and CRN 20065, PS 201-01 are&nbsp;learning communities.  For more information, contact&nbsp;Scott West at <a href='mailto:swest@harford.edu'>swest@harford.edu</a>.&nbsp;</td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 110: Poetry I
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=110&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21083','201720');return false;" style='font-weight:bold'>21083</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>5:30  - 8:20 PM</td><td width='80px' valign='top' Class='dtls1'>Mon.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>C. Webster<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 113: Fiction and Creative Nonfiction I
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=113&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21086','201720');return false;" style='font-weight:bold'>21086</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>S. Muaddi Darraj<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 202: World Literature: 1600 A.D. to the Present (GH) (D)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=202&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20696','201720');return false;" style='font-weight:bold'>20696</a></td><td width='15px' valign='top' Class='dtls1'>02</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;212</td><td width='90px' valign='top' Class='dtls1'>M. Puller<br></td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> </font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 204: English Literature: Survey of English Literature II (GH)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=204&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20767','201720');return false;" style='font-weight:bold'>20767</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:35  - 1:55 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;209</td><td width='90px' valign='top' Class='dtls1'>S. Muaddi Darraj<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 206: American Literature: Late 19th and 20th Centuries (GH) (D)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=206&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20776','201720');return false;" style='font-weight:bold'>20776</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>12:35  - 1:55 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;212</td><td width='90px' valign='top' Class='dtls1'>D. Miller<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20779','201720');return false;" style='font-weight:bold'>20779</a></td><td width='15px' valign='top' Class='dtls12'>02</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>D. Miller<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20779 is an online course.  For information, contact&nbsp;Dotti Miller at <a href='mailto:demiller@harford.edu'>demiller@harford.edu</a>.&nbsp;</td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> </font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 208: Contemporary Humanities (GH) (D)
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=208&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls122'><td width='25px' valign='top' Class='dtls122' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=HYBR' onclick='CrseWindow(this.href);return false' onfocus=this.blur()><img src='/CMS/schedule/images/hybr.gif' alt='Hybrid Class' border='0'></a></td><td width='38px' valign='top' Class='dtls122'><a href='#' class='link_small' onclick="crseDetail('20783','201720');return false;" style='font-weight:bold'>20783</a></td><td width='15px' valign='top' Class='dtls122'>01</td><td width='60px' valign='top' Class='dtls122'>15 Weeks</td><td class='dtls122' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls122'></td><td width='80px' valign='top' Class='dtls122'></td><td width='137px' valign='top' Class='dtls122'>Hybrid Course</td><td width='90px' valign='top' Class='dtls122'>S. West<br></td></tr><tr Class='dtls123'><td colspan=5 align=right valign='top' Class='dtls123'><font color=B0B0B0>Continued . . .&nbsp;&nbsp;&nbsp;&nbsp;</font></td><td width='130px' valign='top' Class='dtls123'>11:20 AM - 12:15 PM</td><td width='80px' valign='top' Class='dtls123'>Mon., Wed.</td><td width='150px' valign='top' Class='dtls123'>Bel Air Hall,&nbsp;Rm.&nbsp;235</td><td width='90px' valign='top' Class='dtls123'>&nbsp;</td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20783 is a hybrid course.  For information, contact&nbsp;Scott West at <a href='mailto:swest@harford.edu'>swest@harford.edu</a>.&nbsp;</td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> ENG 208 has been approved as a diversity course.</font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 209: Technical Writing
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=209&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20784','201720');return false;" style='font-weight:bold'>20784</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>B. Stiffler<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20785','201720');return false;" style='font-weight:bold'>20785</a></td><td width='15px' valign='top' Class='dtls12'>02</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>B. Stiffler<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20785 is an online course.  For information, contact&nbsp;Bill Stiffler at <a href='mailto:bstiffle@harford.edu'>bstiffle@harford.edu</a>.&nbsp;</td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 210: Literature for Children and Adolescents (GH)(D)
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=210&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20788','201720');return false;" style='font-weight:bold'>20788</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;113</td><td width='90px' valign='top' Class='dtls1'>M. Puller<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 215: Multicultural Literature: The 20th Century (GH) (D)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=215&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21304','201720');return false;" style='font-weight:bold'>21304</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>1:40  - 3:00 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>C. Webster<br></td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> </font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 216: Business Communications
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=216&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20789','201720');return false;" style='font-weight:bold'>20789</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;112</td><td width='90px' valign='top' Class='dtls1'>B. Stiffler<br></td></tr><tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20791','201720');return false;" style='font-weight:bold'>20791</a></td><td width='15px' valign='top' Class='dtls12'>02</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>B. Stiffler<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20791 is an online course.  For information, contact&nbsp;Bill Stiffler at <a href='mailto:bstiffle@harford.edu'>bstiffle@harford.edu</a>.&nbsp;</td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> </font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 219: American Women Writers (GH) (D)
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=219&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20795','201720');return false;" style='font-weight:bold'>20795</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>3:15  - 4:35 PM</td><td width='80px' valign='top' Class='dtls1'>Mon., Wed.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>C. Webster<br></td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> </font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 231: Fiction and Creative Nonfiction II
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=231&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21087','201720');return false;" style='font-weight:bold'>21087</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>S. Muaddi Darraj<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 232: Fiction and Creative Nonfiction III
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=232&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21088','201720');return false;" style='font-weight:bold'>21088</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>11:00 AM - 12:20 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;206</td><td width='90px' valign='top' Class='dtls1'>S. Muaddi Darraj<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 233: African-American Literature (GH) (D)
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=233&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20802','201720');return false;" style='font-weight:bold'>20802</a></td><td width='15px' valign='top' Class='dtls12'>01</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>L. Hamilton<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20802 is an online course.  For information, contact&nbsp;Leroy Hamilton at <a href='mailto:lhamilton@harford.edu'>lhamilton@harford.edu</a>.&nbsp;</td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> </font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 234: Ethnic  American Literature (GH) (D)
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=234&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20807','201720');return false;" style='font-weight:bold'>20807</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>9:25  - 10:45 AM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Bel Air Hall,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>E. Jensen<br></td></tr><tr><TD WIDTH=580 ColSpan =9 bgcolor='#EEEEFF' style='border-top: 1px solid #B0B0FF;padding:3px 5px 3px 5px;'><font size="2"> </font></TD></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 235: Poetry II
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=235&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21084','201720');return false;" style='font-weight:bold'>21084</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>5:30  - 8:20 PM</td><td width='80px' valign='top' Class='dtls1'>Mon.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>C. Webster<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 236: Poetry III
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=236&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('21085','201720');return false;" style='font-weight:bold'>21085</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>5:30  - 8:20 PM</td><td width='80px' valign='top' Class='dtls1'>Mon.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>C. Webster<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 237: Literature to Film (GH)
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=237&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls1'><td width='25px' valign='top' Class='dtls1' style='padding-top:5px;'>&nbsp;</td><td width='38px' valign='top' Class='dtls1'><a href='#' class='link_small' onclick="crseDetail('20808','201720');return false;" style='font-weight:bold'>20808</a></td><td width='15px' valign='top' Class='dtls1'>01</td><td width='60px' valign='top' Class='dtls1'>15 Weeks</td><td class='dtls1' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td width='130px' valign='top' Class='dtls1'>2:10  - 3:30 PM</td><td width='80px' valign='top' Class='dtls1'>Tues., Thur.</td><td width='137px' valign='top' Class='dtls1'>Havre de Grace,&nbsp;Rm.&nbsp;207</td><td width='90px' valign='top' Class='dtls1'>L. Fox<br></td></tr>
+		</TABLE>
+		<br>
+
+		<TABLE BORDER="0" Class="CrseDtls" align="center" width="620">
+			<TR><TD class="CourseName" colspan="9">ENG 239: English History and Grammar
+				&nbsp;&nbsp; 3 credits
+				&nbsp;&nbsp;<A class='lnkCourseName' Href='http://ww2.harford.edu/CMS/Schedule/crseDesc_new.asp?Term=201720&ProgramChoice=ENG&CourseNumber=239&Hours=3' onclick="CrseWindow(this.href);return false" onfocus="this.blur()" style="color:#80A0FF;">course description ...</A>
+			</TD></TR>
+			<TR style='font-size: 10px;'>
+			    <TD width='25' class="tdLabel">&nbsp;</TD>
+				<TD width='38' class="tdLabel">CRN</TD>
+				<TD width='15' class="tdLabel">S</TD>
+				<TD width='60' class="tdLabel">NOTES</TD>
+				<TD width='30' align="center" class="tdLabel">FEES</TD>
+				<TD width='130' class="tdLabel">TIME</TD>
+				<TD width='80' class="tdLabel">DAYS</TD>
+				<TD width='137' class="tdLabel">ROOM</TD>
+				<TD width='90' class="tdLabel">INSTRUCTOR</TD>
+			</TR>
+  <tr Class='dtls12'><td width='25px' valign='top' Class='dtls12' style='padding-top:5px;'><a href='U_crweb_description.asp?Q=ONLI' onclick='CrseWindow(this.href);return false' onfocus='this.blur()'><img src='/CMS/schedule/images/onli.gif' alt='Online Class' border='0'></a></td><td width='38px' valign='top' Class='dtls12'><a href='#' class='link_small' onclick="crseDetail('20809','201720');return false;" style='font-weight:bold'>20809</a></td><td width='15px' valign='top' Class='dtls12'>01</td><td width='60px' valign='top' Class='dtls12'>15 Weeks</td><td class='dtls12' style='width:30px;vertical-align:top;text-align:center'>&nbsp;</td><td colspan=3 valign='top' Class='dtls12'>Random - Online Course</font></td><td width='90px' valign='top' Class='dtls12'>M. Puller<br></td></tr><tr><td colspan=9 width=580 Class='dtlsA1' style='padding: 3px 5px 3px 5px;font-size:12px'>CRN 20809 is an online course.  For information, contact&nbsp;Meredyth Puller at <a href='mailto:mpuller@harford.edu'>mpuller@harford.edu</a>.&nbsp;</td></tr>
+		</TABLE>
+		<br>
+
+	<table width='100%' style='border-top: 1px solid #000000; border-bottom: 1px solid #000000' bgcolor='E0E0EF'>
+		<tr>
+			<td width="22" align="right"><img src='/CMS/schedule/images/onli.gif' alt='Online Courses' border='0'></td>
+			<td width='55' style="padding-left:5px;line-height:7px"><a href='U_crweb_description.asp?Q=ONLI' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Online<br>Courses</a></td>
+			<td width="20" align="right"><img src='/CMS/schedule/images/hybr.gif' alt='Hybrid Courses' border='0'></td>
+			<td width='55' style="padding-left:5px;line-height:7px"><a href='U_crweb_description.asp?Q=HYBR' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Hybrid<br>Courses</a></td>
+			<td width="20" align="right"><img src='/CMS/schedule/images/hnrs.gif' alt='Honors Courses' border='0'></td>
+			<td width='65' style="padding-left:5px;line-height:7px"><a href='U_crweb_description.asp?Q=HNRS' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Honors<br>Courses</a></td>
+			<td width="20" align="right"><img src='/CMS/schedule/images/serv.gif' alt='Service Learning Courses' border='0'></td>
+			<td width='85' style="padding-left:5px;line-height:7px"><a href='U_crweb_description.asp?Q=SERV' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Service-Learning<br>Courses</a></td>
+			<td width="31" align="right"><img src='/CMS/schedule/images/comp.gif' alt='Compressed Courses' border='0'></td>
+			<td width='70' style="padding-left:5px;line-height:7px"><a href='U_crweb_description.asp?Q=COMP' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Compressed<br>Courses</a></td>
+			<td width="20" align="right"><img border="0" src="/CMS/schedule/images/Link.gif" width="20" height="19" align="right"></td>
+			<td width='65' style="padding-left:5px;line-height:7px"><a href='U_crweb_description.asp?Q=LINK' class='link_small' onclick='CrseWindow(this.href);return false' onfocus='this.blur()' style="line-height:12px">Learning<br>Communities</a></td>
+		</tr>
+	</table>
+
+</div>
+</td></tr></table>
+</form>
+  	<div class="no-print">
+		
+<div class="widget global-page-share" style="margin-bottom:0px">
+	<p>Share</p>
+	<div class="addthis_toolbox addthis_default_style" style="width:120px">
+		<a class="addthis_button_facebook"></a>
+		<a class="addthis_button_twitter"></a>
+		<a class="addthis_button_email"></a>
+		<a class="addthis_button_pinterest_share"></a>
+		<a class="addthis_button_compact"></a>
+	</div>
+	<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-515af5b520a5db65"></script>
+</div>
+<noscript>
+    <style type="text/css">
+        .widget.global-page-share {
+            display: none;
+        }
+    </style>
+</noscript>
+
+	</div>
+</div>
+<div class="no-print">
+	<div id="footer" class="footer content-area" style="padding-top:15px;text-align:left">
+		<div class="left-column">
+			<div class="widget rich-text">
+    <p>Join the conversation<br>on social media:</p>
+<div class="widget follow-us-home">
+    <a href="http://www.facebook.com/HarfordCC" target="_blank"><img alt="Follow Us on Facebook" src="/CMS/images/resources/facebook.png"></a>
+    <a target="_blank" href="http://twitter.com/HarfordCC"><img alt="Follow Us on Twitter" src="/CMS/images/resources/twitter.png"></a>
+	<a href="http://instagram.com/harfordcc#" target="_blank"><img alt="Follow Us on Instagram" src="/CMS/images/resources/instagram.png"></a>
+    <a href="https://www.linkedin.com/edu/school?id=21331&trk=edu-cp-title" target="_blank"><img height="34" alt="LinkedIn" width="34" src="http://www.harford.edu/~/media/widget-resources/follow-us/linkedin.ashx"></a>
+</div>
+<p>Also, visit our events site:</p>
+<p><a href="http://www.liveatharfordcc.com" style="line-height: 20px;" target="_blank"><img width="240" height="136" alt="LIVE" src="http://www.harford.edu/~/media/LIVE/LiveLogo01.ashx" /></a></p>
+<p>Harford Community College<br>
+401 Thomas Run Road<br>
+Bel Air, MD 21015<br>
+(443) 412-2000</p>
+<p>Public Safety:<br>
+(443) 412-2272</p>
+<p class="copyright">&copy;2016 Harford Community College</p>
+<p class="copyright">ALL RIGHTS RESERVED.</p>
+</div>
+
+
+		</div>
+		<div class="right-column">
+			<div class="widget columns">
+						<div class="column-25">
+			    <div class="buffer">
+					<div class="widget rich-text">
+					    <h4>Contact Info</h4>
+						<ul>
+						    <li><a href="http://www.harford.edu/about/offices-and-departments.aspx">Contact Harford</a> </li>
+						    <li><a href="http://www2.harford.edu/CMS/Directory/Directory.asp" target="_blank">Directories</a> </li>
+						    <li><a href="http://www.harford.edu/about/campus-tours-and-events.aspx">Visit / Map</a> </li>
+						    <li><a href="http://www.harford.edu/about/student-consumer-information.aspx">Privacy Policy</a>&nbsp;</li>
+						    <li><a href="https://www.google.com/maps/place/401+Thomas+Run+Rd,+Bel+Air,+MD+21015/@39.5583912,-76.2864083,17z/data=!3m1!4b1!4m2!3m1!1s0x89c7dcb992e1afdb:0xfb67aa56d381ec56" target="_blank">Directions</a></li>
+						</ul>
+						<h4>Social Media</h4>
+						<ul>
+						    <li><a href="https://www.facebook.com/HarfordCC/" target="_blank">Facebook</a></li>
+						    <li><a href="https://twitter.com/HarfordCC" target="_blank">Twitter</a></li>
+						    <li><a href="https://www.instagram.com/harfordcc/" target="_blank">Instagram</a></li>
+						    <li><a href="https://www.linkedin.com/edu/school?id=21331&amp;trk=edu-cp-title" target="_blank">LinkedIn</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="column-25">
+			    <div class="buffer">
+					<div class="widget rich-text">
+					    <h4>Resources</h4>
+						<ul>
+						    <li><a href="http://ww2.harford.edu/Catalog/academic_calendar.asp" target="_blank">Academic Calendar</a>&nbsp; </li>
+						    <li><a href="http://ww2.harford.edu/Catalog" target="_blank">Academic Catalog</a> </li>
+						    <li><a href="http://www.harford.edu/student-services/registration-and-records/schedule-of-classes.aspx">Class Schedules</a> </li>
+						    <li><a href="http://www.harford.edu/about/calendar.aspx">College Calendar-Full</a>&nbsp; </li>
+						    <li><a href="http://bookstore.harford.edu/" target="_blank">College Store</a> </li>
+						    <li><a href="http://www.harford.edu/about/offices-and-departments/information-technology.aspx">Computer Help</a></li>
+						    <li><span style="line-height: 1.231;"><a href="https://owa.harford.edu" style="line-height: 1.231; background-color: transparent;" target="_blank">Faculty/Staff Email</a></span> </li>
+						    <li><a href="http://www.harford.edu/academics/library.aspx">Library</a> </li>
+						    <li><a href="http://www.harford.edu/resource/owlmail.aspx">OwlMail</a>&nbsp; </li>
+						    <li><a href="http://owlnet.harford.edu" target="_blank">OwlNet</a> </li>
+						    <li><a href="http://www.harford.edu/resource/solar.aspx">SOLAR</a> </li>
+						    <li><a href="http://www.harford.edu/about/offices-and-departments/information-technology/resources/credit-students/student-self-service.aspx">StudentEAccess</a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="column-25">
+				<div class="buffer">
+					<div class="widget rich-text">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="http://www.harford.edu/resource/a-z-index.aspx">A-Z Index</a></li>
+							<li><a href="http://www.harford.edu/admissions.aspx">Admissions</a></li>
+							<li><a href="http://www.harford.edu/community/apgfcu-arena.aspx">APGFCU Arena</a></li>
+							<li><a href="http://www.harfordathletics.com" target="_blank">Athletics</a></li>
+							<li><a href="http://www.harford.edu/community/chesapeake-gallery.aspx">Chesapeake Gallery</a></li>
+    						<li><a href="http://www.harford.edu/academics/elearning.aspx">eLearning Dept</a></li>
+							<li><a href="http://www.harford.edu/faculty-webpages.aspx">Faculty Websites</a></li>
+							<li><a href="http://www.harford.edu/student-services/financial-aid.aspx">Financial Aid</a></li>
+							<li><a href="http://www.harford.edu/community/hays-heighe-house.aspx">Hays-Heighe House</a></li>
+						    <li><a href="http://www.liveatharfordcc.com" target="_blank">LIVE! at HCC</a></li>
+						    <li><a href="http://www.harford.edu/about/offices-and-departments/public-safety.aspx">Public Safety</a></li>
+							<li><a href="http://www.whfc911.org/" target="_blank">WHFC Radio</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>			<div class="column-25">
+				<div class="buffer">
+					<div class="widget rich-text">
+						<h4>Information For...</h4>
+						<ul>
+							<li><a href="http://www.harford.edu/alumni.aspx">Alumni &amp; Friends</a></li>
+						    <li><a href="http://www.liveatharfordcc.com" target="_blank">Cultural Events</a></li>
+							<li><a href="http://www.harford.edu/current-students.aspx">Current Students</a></li>
+							<li><a href="http://www.harford.edu/student-services/career-services/info-for-employers.aspx">Employers</a></li>
+							<li><a href="http://www.harford.edu/future-students.aspx">Future Students</a></li>
+							<li><a href="http://www.harford.edu/job-seekers.aspx">Future Employees</a></li>
+							<li><a href="http://www.harford.edu/media.aspx">Media</a></li>
+							<li><a href="http://www.harford.edu/parents.aspx">Parents &amp; Families</a></li>
+						    <li><a href="http://www.harford.edu/about/offices-and-departments/the-procurement-office/for-vendors.aspx">Vendors</a></li>
+							<li><a href="http://www.harford.edu/student-services/support-for-military-and-veterans.aspx">Veterans</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			</div>
+			<br>
+		</div>
+	    <br>
+	</div>
+</div>
+</form>
+</body>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2088681-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>

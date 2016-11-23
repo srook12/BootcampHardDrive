@@ -1,0 +1,1 @@
+Main-Class: mywork.packaging.ex4.TestCustomer

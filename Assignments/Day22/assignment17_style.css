@@ -1,0 +1,71 @@
+body {
+  background-image: url(bg-image.jpg);
+  background-size: cover;
+}
+
+.opinion {
+  border: 2px solid red;
+  background-color: #FFFFFF;
+}
+
+h2 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+li {
+  font-size: 22px;
+}
+
+/* 1st column - bold the stdent name */
+tr td:nth-child(1) {
+  font-weight: bold;
+}
+
+/* 3rd column - display the supervisor's name in red */
+tr td:nth-child(3) {
+  color: red;
+}
+
+/* 4th column - date started is italicized */
+tr td:nth-child(4) {
+  font-style: italic;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.myrow {
+  display: flex; /* equal height of the children */
+}
+
+.mycol {
+  flex: 1; /* additionally, equal width */
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+footer {
+  background-color: black;
+  color: silver;
+  text-align: center;
+}
+
+.table-bordered td, .table-bordered th{
+    border: blue 2px solid !important;
+}
+
+.title-div {
+  background-color: #FFFFFF;
+}

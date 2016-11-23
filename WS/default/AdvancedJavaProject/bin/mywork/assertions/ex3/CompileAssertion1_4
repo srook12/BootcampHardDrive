@@ -1,0 +1,2 @@
+All files will be compiled however a warning will be issued on AssertAsIdentifier because using assert
+as a variable name will result in a warning.

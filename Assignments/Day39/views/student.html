@@ -1,0 +1,37 @@
+<div class="container">
+	<table id="list_table" class="table table-bordered table-condensed">
+		<thead>
+			<tr class="table_head">
+				<th class="text-center head_font">Delete</th>
+				<th class="text-center head_font">First Name</th>
+				<th class="text-center head_font">Last Name</th>
+				<th class="text-center head_font">SAT Score</th>
+				<th class="text-center head_font">GPA</th>
+				<th class="text-center head_font"><a href="http://localhost:8080//majors/major_list">Major</a></th>
+				<th class="text-center head_font">Edit</th>
+			</tr>
+		</thead>
+		<tbody id="student_list">
+			<tr ng-repeat="student in ctrl.students">
+				<td class="text-center"><a href="{{ctrl.generateLink(student.id)}}&amp;mode=delete"><span class="glyphicon glyphicon-remove"></span></a></td>
+				<td>{{student.first_name}}</td>
+				<td><a href="#/student_details/{{student.id}}">{{student.last_name}}</a></td>
+				<td class="text-right">{{student.sat}}</td>
+				<td class="text-right">{{student.gpa.toFixed(2);}}</td>
+				<td>{{ctrl.getMajorDescription(student.major_id);}}</td>
+				
+								
+				<td class="text-center"><a href="{{ctrl.generateLink(student.id)}}&amp;mode=edit"><span class="glyphicon glyphicon-edit"></span></a></td>			
+			</tr>
+				
+		</tbody>
+		
+		
+	</table>
+	
+	<br/>
+	<div class="row">
+		<div id="_link" class="col-sm-12 text-center"><a href="./student_details?mode=create">Add a Student</a></div>
+	</div>
+	
+</div>

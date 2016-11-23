@@ -1,0 +1,16 @@
+gov\ssa\config\DbConfiguration.class
+gov\ssa\dao\MajorDao.class
+gov\ssa\dao\StudentDao.class
+gov\ssa\dao\IMajorDao.class
+gov\ssa\controller\MainController.class
+gov\ssa\service\StudentService.class
+gov\ssa\controller\StudentController.class
+gov\ssa\entity\Student.class
+gov\ssa\service\IStudentService.class
+gov\ssa\service\MajorService.class
+gov\ssa\controller\MajorController.class
+gov\ssa\entity\Major.class
+gov\ssa\dao\IStudentDao.class
+gov\ssa\service\IMajorService.class
+gov\ssa\application\Application.class
+gov\ssa\config\MvcConfigure.class

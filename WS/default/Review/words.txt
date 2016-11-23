@@ -1,0 +1,7 @@
+frog
+dog
+cat
+elephant
+lion
+antelope
+snake

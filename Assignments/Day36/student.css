@@ -1,0 +1,24 @@
+#sat {
+	margin-left: -5px;
+	margin-right: 10px;
+}
+
+.head_style {
+	background-color: #006600;
+	color: white;
+	font-size: 20px;
+}
+
+.body_style {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+tbody:nth-child(odd){
+  background-color: #66ff66;
+}
+
+
+tbody:nth-child(even){
+  background-color: #ffff66;
+}

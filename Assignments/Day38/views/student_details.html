@@ -1,0 +1,43 @@
+<div id="student_details" class="container">
+		<table class="table table-bordered table-condensed">
+			<thead>
+				<tr class="text-center table_head head_font">
+					<td colspan="2">Student details</td>
+				</tr>
+			</thead>
+			<tbody id="details">
+				<tr id="first_name_row">
+					<td class="text-right body_font">First Name:</td>
+					<td class="body_font"><input id="first_name" type="text" value="{{ctrl.student.first_name}}" /></td>
+				</tr>
+				<tr id="last_name_row">
+					<td class="text-right body_font">Last Name:</td>
+					<td class="body_font"><input id="last_name" type="text" value="{{ctrl.student.last_name}}" /></td>
+				</tr>
+				<tr id="sat_row">
+					<td class="text-right body_font">SAT Score:</td>
+					<td class="body_font"><input id="sat" type="text" value="{{ctrl.student.sat}}" /></td>
+				</tr>
+				<tr id="gpa_row">
+					<td class="text-right body_font">GPA:</td>
+					<td class="body_font"><input id="gpa" type="text" value="{{ctrl.student.gpa.toFixed(2)}}" /></td>
+				</tr>
+				<tr class="text-center" id="button_row" >
+					<td colspan="2"><button id="update_button">Update</button></td>
+				</tr>
+				<!--
+				<tr id="major_id_row">
+					<td class="text-right body_font">Major:</td>
+					{{ctrl.generateMajorIdTd();}}
+				</tr>
+				<tr id="button_row">
+					{{ctrl.generateButtonTd();}}
+				</tr>
+				-->	
+			</tbody>
+		</table>
+				
+		<div class="row">
+			<div id="_link" class="col-sm-12 text-center"><a href="#/student">Back to student listings</a></div>
+		</div>
+	</div>

@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!DOCTYPE library [
+	<!ELEMENT library (book*)>
+	<!ELEMENT book (title, author*)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT author (#PCDATA)>
+	<!ATTLIST book type CDATA "Classic" ISBN NMTOKEN #REQUIRED>
+]>
+
+<library>
+	<book type="Classic" ISBN="A123">
+		<title>The Trial</title>
+		<author>Franz Kafka</author>
+	</book>
+	<book type="Science Fiction" ISBN="S321">
+		<title>The Foundation</title>
+		<author>Isaac Asimov</author>
+	</book>
+	<book type="Mystery" ISBN="M321">
+		<title>Partners in Crime</title>
+		<author>Agatha Cristie</author>
+	</book>
+	<book type="Technical" ISBN="T521">
+		<title>Core Java 2 Fundamentals</title>
+		<author>Cay Horstmann</author>
+		<author>Gary Cornell</author>
+	</book>
+</library>

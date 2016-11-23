@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="todos">
+<head>
+
+  <title>Angular Todos</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css" media="screen" />
+
+  <script src="vendor/angular.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div ng-controller="TodosCountCtrl as ctrl">
+				<h3>{{ctrl.count}} items</h3>
+		</div>
+		<main ng-controller="TodosCtrl as ctrl">
+			
+			<table class="table">
+				<thead><tr><th>Desc</th><th>Added</th><th></th></tr></thead>
+				<input class="form-control" type="text" placeholder="Search" ng-model="ctrl.search">
+				<p ng-show="ctrl.search">Filtering by {{ctrl.search}}</p>
+				<tbody>
+					<tr ng-repeat="todo in ctrl.todos | filter:{description: ctrl.search} | limitTo:10">
+						<td>{{todo.description}}</td>
+						<td>{{todo.timestamp | date:"MMM d"}}</td>
+						<!-- <td><input type="checkbox" checked="todo.complete" ng-click="ctrl.toggleComplete()"/></td> -->
+						<td><button class="btn btn-default" ng-hide="todo.complete" ng-click="ctrl.markComplete(todo)">Done</button></td>
+					</tr>
+					<tr>
+						<td><input ng-model="ctrl.newName" class="form-control" type="text" placeholder="New Todo"></td>
+						<td><button class="btn btn-primary" ng-click="ctrl.createItems()">Save</button></td>
+					</tr>
+				</tbody>
+			</table>
+			<button class= "btn btn-default" ng-click="ctrl.reverseList()">Reverse</button>
+		</main>
+	</div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+For AssertionA, AssertionB, AssertionC, and AssertionD, can use:
+	javac -ea AssertionX.java
+	
+For AssertAsIdentifier:
+	javac -source 1.3 AssertAsIdentifier.java
+	
+-source 1.4 will not work as assert was made a keyword as of version 1.4	

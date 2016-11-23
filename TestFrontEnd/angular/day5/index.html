@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="AppMod">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo Intro to Angular</title>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js" type="text/javascript"></script>
+	<script src="ngStorage.js" type="text/javascript"></script>
+
+	
+	<script src="app.module.js" type="text/javascript"></script>
+	<script src="class_service.js" type="text/javascript"></script>
+
+	<script src="main.controller.js" type="text/javascript"></script>
+	
+	<script src="utils.js" type="text/javascript"></script>
+	<script src="major.controller.js" type="text/javascript"></script>
+	<script src="school_year.controller.js" type="text/javascript"></script>
+	<script src="portal.controller.js" type="text/javascript"></script>
+	<script src="student.controller.js" type="text/javascript"></script>
+	<script src="department.controller.js" type="text/javascript"></script>
+	<script src="class.controller.js" type="text/javascript"></script>
+	<script src="instructor.controller.js" type="text/javascript"></script>
+	<script src="class_list.controller.js" type="text/javascript"></script>
+	<script src="registration.controller.js" type="text/javascript"></script>
+	<script src="audit.controller.js" type="text/javascript"></script>
+	
+
+	<script src="app.config.js" type="text/javascript"></script>
+
+
+	<style type="text/css">
+	</style>
+</head>
+<body ng-controller="MainCtrl as main_ctrl">
+	<div id="allpage">
+		<div id="header">
+			<!--
+			<span>The header {{main_ctrl.student_session["first_name"] + ' ' + main_ctrl.student_session["last_name"]}}</span>
+			-->
+			<span>{{main_ctrl.printName()}}</span>
+			<span ng-show="main_ctrl.isLoggedIn()"> | <a href="#/student">View profile</a> | </span>
+			<span ng-show="main_ctrl.isLoggedIn()"><a href="#/student_transcript">View Transcript</a> | </span>
+			<span ng-show="main_ctrl.isLoggedIn()"><a href="#/student_audit">Audit</a> | </span>
+			<span ng-show="main_ctrl.isLoggedIn()"><a href="#/student_register">Register</a></span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="#/">HOME</a></li>
+				<li><a ng-href="{{main_ctrl.login_logout_link()}}">{{main_ctrl.login_logout_label}}</a></li>
+				<li ng-show="main_ctrl.isLoggedIn()"><a ng-href="#/student_portal">STUDENT</a></li>
+				<li><a href="#/major">MAJOR</a></li>
+				<li><a href="#/class_catalog">CLASS CATALOG</a></li>
+				<li><a href="#/instructor">INSTRUCTOR</a></li>
+				<li><a href="#/course_offerings">COURSE OFFERINGS</a></li>
+			</ul>
+
+		</div>
+		<div id="leftbarx">
+		</div>
+		<div id="content">
+			<div ng-view></div>
+		</div>
+		<!-- <div style="float:clear;"></div> -->
+		<div id="footer">
+			<span>The footer</span>
+		</div>
+	</div>
+</body>
+</html>

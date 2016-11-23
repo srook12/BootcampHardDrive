@@ -1,0 +1,10 @@
+java.util.List<String> items = new java.util.ArrayList<String>();
+items.add("A");
+items.add("B");
+items.add("C");
+items.add("D");
+items.add("E");
+
+for(String item : items){
+	System.out.println(item);
+}

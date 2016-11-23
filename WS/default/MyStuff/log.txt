@@ -1,0 +1,4232 @@
+Root level: 
+Adding to the solution set: 18,897,109
+
+Current sum is: 18,897,109  Solution so far: 18,897,109 
+
+Value of maxIndex before adding: 25
+Value of maxIndex after adding: 24
+Root level: 
+Value of idx: 25
+Adding to the solution set: 12,828,837
+
+Current sum is: 31,725,946  Solution so far: 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 24
+Value of maxIndex after adding: 23
+Adding to the solution set: 9,461,105
+
+Current sum is: 41,187,051  Solution so far: 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 23
+Value of maxIndex after adding: 22
+Adding to the solution set: 6,371,773
+
+Current sum is: 47,558,824  Solution so far: 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 22
+Value of maxIndex after adding: 21
+Adding to the solution set: 5,965,343
+
+Current sum is: 53,524,167  Solution so far: 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 21
+Value of maxIndex after adding: 20
+Adding to the solution set: 5,946,800
+
+Current sum is: 59,470,967  Solution so far: 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 20
+Value of maxIndex after adding: 19
+Adding to the solution set: 5,582,170
+
+Current sum is: 65,053,137  Solution so far: 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 19
+Value of maxIndex after adding: 18
+Adding to the solution set: 5,564,635
+
+Current sum is: 70,617,772  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 18
+Value of maxIndex after adding: 17
+Adding to the solution set: 5,268,860
+
+Current sum is: 75,886,632  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 17
+Value of maxIndex after adding: 16
+Adding to the solution set: 4,552,402
+
+Current sum is: 80,439,034  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Adding to the solution set: 4,335,391
+
+Current sum is: 84,774,425  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 89,070,675  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 93,295,526  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 97,488,413  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 100,928,222  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Current sum of 100928222 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 97,488,413  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 10
+Value of maxIndex before removing: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 100,768,246  Solution so far: 3,279,833 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Current sum of 100768246 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 97,488,413  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 9
+Value of maxIndex before removing: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 100,583,726  Solution so far: 3,095,313 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Current sum of 100583726 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 97,488,413  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 8
+Value of maxIndex before removing: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 100,301,309  Solution so far: 2,812,896 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Current sum of 100301309 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 97,488,413  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 7
+Value of maxIndex before removing: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 100,271,656  Solution so far: 2,783,243 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Current sum of 100271656 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 97,488,413  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 6
+Value of maxIndex before removing: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 100,198,902  Solution so far: 2,710,489 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Current sum of 100198902 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 97,488,413  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 5
+Value of maxIndex before removing: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 100,031,895  Solution so far: 2,543,482 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Current sum of 100031895 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 97,488,413  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 4
+Value of maxIndex before removing: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 99,844,698  Solution so far: 2,356,285 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 102,070,707  Solution so far: 2,226,009 2,356,285 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Current sum of 102070707 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 99,844,698  Solution so far: 2,356,285 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 2
+Value of maxIndex before removing: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 101,993,825  Solution so far: 2,149,127 2,356,285 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Current sum of 101993825 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 99,844,698  Solution so far: 2,356,285 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 1
+Value of maxIndex before removing: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 101,987,206  Solution so far: 2,142,508 2,356,285 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Current sum of 101987206 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 99,844,698  Solution so far: 2,356,285 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: 0
+Value of maxIndex before removing: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 101,979,109  Solution so far: 2,134,411 2,356,285 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+Current sum of 101979109 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 99,844,698  Solution so far: 2,356,285 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 97,488,413  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 93,295,526  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 89,070,675  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 84,774,425  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 80,439,034  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 75,886,632  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,268,860
+
+Current sum is: 70,617,772  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,564,635
+
+Current sum is: 65,053,137  Solution so far: 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,582,170
+
+Current sum is: 59,470,967  Solution so far: 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,946,800
+
+Current sum is: 53,524,167  Solution so far: 5,965,343 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,965,343
+
+Current sum is: 47,558,824  Solution so far: 6,371,773 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 6,371,773
+
+Current sum is: 41,187,051  Solution so far: 9,461,105 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 9,461,105
+
+Current sum is: 31,725,946  Solution so far: 12,828,837 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 12,828,837
+
+Current sum is: 18,897,109  Solution so far: 18,897,109 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 18,897,109
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 12,828,837
+
+Current sum is: 12,828,837  Solution so far: 12,828,837 
+
+Value of maxIndex before adding: 24
+Value of maxIndex after adding: 23
+Root level: 
+Value of idx: 24
+Adding to the solution set: 9,461,105
+
+Current sum is: 22,289,942  Solution so far: 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 23
+Value of maxIndex after adding: 22
+Adding to the solution set: 6,371,773
+
+Current sum is: 28,661,715  Solution so far: 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 22
+Value of maxIndex after adding: 21
+Adding to the solution set: 5,965,343
+
+Current sum is: 34,627,058  Solution so far: 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 21
+Value of maxIndex after adding: 20
+Adding to the solution set: 5,946,800
+
+Current sum is: 40,573,858  Solution so far: 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 20
+Value of maxIndex after adding: 19
+Adding to the solution set: 5,582,170
+
+Current sum is: 46,156,028  Solution so far: 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 19
+Value of maxIndex after adding: 18
+Adding to the solution set: 5,564,635
+
+Current sum is: 51,720,663  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 18
+Value of maxIndex after adding: 17
+Adding to the solution set: 5,268,860
+
+Current sum is: 56,989,523  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 17
+Value of maxIndex after adding: 16
+Adding to the solution set: 4,552,402
+
+Current sum is: 61,541,925  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Adding to the solution set: 4,335,391
+
+Current sum is: 65,877,316  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 70,173,566  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 74,398,417  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 78,591,304  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 82,031,113  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 85,310,946  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 88,406,259  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 91,219,155  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 94,002,398  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 96,712,887  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 99,256,369  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 101,612,654  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Current sum of 101612654 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 99,256,369  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: 3
+Value of maxIndex before removing: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 101,482,378  Solution so far: 2,226,009 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Current sum of 101482378 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 99,256,369  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: 2
+Value of maxIndex before removing: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 101,405,496  Solution so far: 2,149,127 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Current sum of 101405496 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 99,256,369  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: 1
+Value of maxIndex before removing: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 101,398,877  Solution so far: 2,142,508 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Current sum of 101398877 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 99,256,369  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: 0
+Value of maxIndex before removing: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 101,390,780  Solution so far: 2,134,411 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+Current sum of 101390780 exceeds the target sum of 100000000. Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 99,256,369  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 96,712,887  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 94,002,398  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 91,219,155  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 88,406,259  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 85,310,946  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 82,031,113  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 78,591,304  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 74,398,417  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 70,173,566  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 65,877,316  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 61,541,925  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 56,989,523  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,268,860
+
+Current sum is: 51,720,663  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,564,635
+
+Current sum is: 46,156,028  Solution so far: 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,582,170
+
+Current sum is: 40,573,858  Solution so far: 5,946,800 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,946,800
+
+Current sum is: 34,627,058  Solution so far: 5,965,343 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,965,343
+
+Current sum is: 28,661,715  Solution so far: 6,371,773 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 6,371,773
+
+Current sum is: 22,289,942  Solution so far: 9,461,105 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 9,461,105
+
+Current sum is: 12,828,837  Solution so far: 12,828,837 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 12,828,837
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 9,461,105
+
+Current sum is: 9,461,105  Solution so far: 9,461,105 
+
+Value of maxIndex before adding: 23
+Value of maxIndex after adding: 22
+Root level: 
+Value of idx: 23
+Adding to the solution set: 6,371,773
+
+Current sum is: 15,832,878  Solution so far: 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 22
+Value of maxIndex after adding: 21
+Adding to the solution set: 5,965,343
+
+Current sum is: 21,798,221  Solution so far: 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 21
+Value of maxIndex after adding: 20
+Adding to the solution set: 5,946,800
+
+Current sum is: 27,745,021  Solution so far: 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 20
+Value of maxIndex after adding: 19
+Adding to the solution set: 5,582,170
+
+Current sum is: 33,327,191  Solution so far: 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 19
+Value of maxIndex after adding: 18
+Adding to the solution set: 5,564,635
+
+Current sum is: 38,891,826  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 18
+Value of maxIndex after adding: 17
+Adding to the solution set: 5,268,860
+
+Current sum is: 44,160,686  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 17
+Value of maxIndex after adding: 16
+Adding to the solution set: 4,552,402
+
+Current sum is: 48,713,088  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Adding to the solution set: 4,335,391
+
+Current sum is: 53,048,479  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 57,344,729  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 61,569,580  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 65,762,467  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 69,202,276  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 72,482,109  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 75,577,422  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 78,390,318  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 81,173,561  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 83,884,050  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 86,427,532  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 88,783,817  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 91,009,826  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 93,158,953  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 95,301,461  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 97,435,872  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 95,301,461  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 93,158,953  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 91,009,826  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 88,783,817  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 86,427,532  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 83,884,050  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 81,173,561  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 78,390,318  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 75,577,422  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 72,482,109  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 69,202,276  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 65,762,467  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 61,569,580  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 57,344,729  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 53,048,479  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 48,713,088  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 44,160,686  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,268,860
+
+Current sum is: 38,891,826  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,564,635
+
+Current sum is: 33,327,191  Solution so far: 5,582,170 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,582,170
+
+Current sum is: 27,745,021  Solution so far: 5,946,800 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,946,800
+
+Current sum is: 21,798,221  Solution so far: 5,965,343 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,965,343
+
+Current sum is: 15,832,878  Solution so far: 6,371,773 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 6,371,773
+
+Current sum is: 9,461,105  Solution so far: 9,461,105 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 9,461,105
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 6,371,773
+
+Current sum is: 6,371,773  Solution so far: 6,371,773 
+
+Value of maxIndex before adding: 22
+Value of maxIndex after adding: 21
+Root level: 
+Value of idx: 22
+Adding to the solution set: 5,965,343
+
+Current sum is: 12,337,116  Solution so far: 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 21
+Value of maxIndex after adding: 20
+Adding to the solution set: 5,946,800
+
+Current sum is: 18,283,916  Solution so far: 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 20
+Value of maxIndex after adding: 19
+Adding to the solution set: 5,582,170
+
+Current sum is: 23,866,086  Solution so far: 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 19
+Value of maxIndex after adding: 18
+Adding to the solution set: 5,564,635
+
+Current sum is: 29,430,721  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 18
+Value of maxIndex after adding: 17
+Adding to the solution set: 5,268,860
+
+Current sum is: 34,699,581  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 17
+Value of maxIndex after adding: 16
+Adding to the solution set: 4,552,402
+
+Current sum is: 39,251,983  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Adding to the solution set: 4,335,391
+
+Current sum is: 43,587,374  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 47,883,624  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 52,108,475  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 56,301,362  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 59,741,171  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 63,021,004  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 66,116,317  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 68,929,213  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 71,712,456  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 74,422,945  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 76,966,427  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 79,322,712  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 81,548,721  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 83,697,848  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 85,840,356  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 87,974,767  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 85,840,356  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 83,697,848  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 81,548,721  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 79,322,712  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 76,966,427  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 74,422,945  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 71,712,456  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 68,929,213  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 66,116,317  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 63,021,004  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 59,741,171  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 56,301,362  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 52,108,475  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 47,883,624  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 43,587,374  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 39,251,983  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 34,699,581  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,268,860
+
+Current sum is: 29,430,721  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,564,635
+
+Current sum is: 23,866,086  Solution so far: 5,582,170 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,582,170
+
+Current sum is: 18,283,916  Solution so far: 5,946,800 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,946,800
+
+Current sum is: 12,337,116  Solution so far: 5,965,343 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,965,343
+
+Current sum is: 6,371,773  Solution so far: 6,371,773 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 6,371,773
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 5,965,343
+
+Current sum is: 5,965,343  Solution so far: 5,965,343 
+
+Value of maxIndex before adding: 21
+Value of maxIndex after adding: 20
+Root level: 
+Value of idx: 21
+Adding to the solution set: 5,946,800
+
+Current sum is: 11,912,143  Solution so far: 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 20
+Value of maxIndex after adding: 19
+Adding to the solution set: 5,582,170
+
+Current sum is: 17,494,313  Solution so far: 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 19
+Value of maxIndex after adding: 18
+Adding to the solution set: 5,564,635
+
+Current sum is: 23,058,948  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 18
+Value of maxIndex after adding: 17
+Adding to the solution set: 5,268,860
+
+Current sum is: 28,327,808  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 17
+Value of maxIndex after adding: 16
+Adding to the solution set: 4,552,402
+
+Current sum is: 32,880,210  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Adding to the solution set: 4,335,391
+
+Current sum is: 37,215,601  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 41,511,851  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 45,736,702  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 49,929,589  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 53,369,398  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 56,649,231  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 59,744,544  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 62,557,440  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 65,340,683  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 68,051,172  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 70,594,654  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 72,950,939  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 75,176,948  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 77,326,075  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 79,468,583  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 81,602,994  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 79,468,583  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 77,326,075  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 75,176,948  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 72,950,939  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 70,594,654  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 68,051,172  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 65,340,683  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 62,557,440  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 59,744,544  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 56,649,231  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 53,369,398  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 49,929,589  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 45,736,702  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 41,511,851  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 37,215,601  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 32,880,210  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 28,327,808  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,268,860
+
+Current sum is: 23,058,948  Solution so far: 5,564,635 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,564,635
+
+Current sum is: 17,494,313  Solution so far: 5,582,170 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,582,170
+
+Current sum is: 11,912,143  Solution so far: 5,946,800 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,946,800
+
+Current sum is: 5,965,343  Solution so far: 5,965,343 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,965,343
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 5,946,800
+
+Current sum is: 5,946,800  Solution so far: 5,946,800 
+
+Value of maxIndex before adding: 20
+Value of maxIndex after adding: 19
+Root level: 
+Value of idx: 20
+Adding to the solution set: 5,582,170
+
+Current sum is: 11,528,970  Solution so far: 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 19
+Value of maxIndex after adding: 18
+Adding to the solution set: 5,564,635
+
+Current sum is: 17,093,605  Solution so far: 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 18
+Value of maxIndex after adding: 17
+Adding to the solution set: 5,268,860
+
+Current sum is: 22,362,465  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 17
+Value of maxIndex after adding: 16
+Adding to the solution set: 4,552,402
+
+Current sum is: 26,914,867  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Adding to the solution set: 4,335,391
+
+Current sum is: 31,250,258  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 35,546,508  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 39,771,359  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 43,964,246  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 47,404,055  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 50,683,888  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 53,779,201  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 56,592,097  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 59,375,340  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 62,085,829  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 64,629,311  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 66,985,596  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 69,211,605  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 71,360,732  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 73,503,240  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 75,637,651  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 73,503,240  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 71,360,732  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 69,211,605  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 66,985,596  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 64,629,311  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 62,085,829  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 59,375,340  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 56,592,097  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 53,779,201  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 50,683,888  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 47,404,055  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 43,964,246  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 39,771,359  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 35,546,508  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 31,250,258  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 26,914,867  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 22,362,465  Solution so far: 5,268,860 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,268,860
+
+Current sum is: 17,093,605  Solution so far: 5,564,635 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,564,635
+
+Current sum is: 11,528,970  Solution so far: 5,582,170 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,582,170
+
+Current sum is: 5,946,800  Solution so far: 5,946,800 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,946,800
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 5,582,170
+
+Current sum is: 5,582,170  Solution so far: 5,582,170 
+
+Value of maxIndex before adding: 19
+Value of maxIndex after adding: 18
+Root level: 
+Value of idx: 19
+Adding to the solution set: 5,564,635
+
+Current sum is: 11,146,805  Solution so far: 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 18
+Value of maxIndex after adding: 17
+Adding to the solution set: 5,268,860
+
+Current sum is: 16,415,665  Solution so far: 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 17
+Value of maxIndex after adding: 16
+Adding to the solution set: 4,552,402
+
+Current sum is: 20,968,067  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Adding to the solution set: 4,335,391
+
+Current sum is: 25,303,458  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 29,599,708  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 33,824,559  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 38,017,446  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 41,457,255  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 44,737,088  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 47,832,401  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 50,645,297  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 53,428,540  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 56,139,029  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 58,682,511  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 61,038,796  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 63,264,805  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 65,413,932  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 67,556,440  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 69,690,851  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 67,556,440  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 65,413,932  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 63,264,805  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 61,038,796  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 58,682,511  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 56,139,029  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 53,428,540  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 50,645,297  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 47,832,401  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 44,737,088  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 41,457,255  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 38,017,446  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 33,824,559  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 29,599,708  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 25,303,458  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 20,968,067  Solution so far: 4,552,402 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 16,415,665  Solution so far: 5,268,860 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,268,860
+
+Current sum is: 11,146,805  Solution so far: 5,564,635 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,564,635
+
+Current sum is: 5,582,170  Solution so far: 5,582,170 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,582,170
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 5,564,635
+
+Current sum is: 5,564,635  Solution so far: 5,564,635 
+
+Value of maxIndex before adding: 18
+Value of maxIndex after adding: 17
+Root level: 
+Value of idx: 18
+Adding to the solution set: 5,268,860
+
+Current sum is: 10,833,495  Solution so far: 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 17
+Value of maxIndex after adding: 16
+Adding to the solution set: 4,552,402
+
+Current sum is: 15,385,897  Solution so far: 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Adding to the solution set: 4,335,391
+
+Current sum is: 19,721,288  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 24,017,538  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 28,242,389  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 32,435,276  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 35,875,085  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 39,154,918  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 42,250,231  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 45,063,127  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 47,846,370  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 50,556,859  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 53,100,341  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 55,456,626  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 57,682,635  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 59,831,762  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 61,974,270  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 64,108,681  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 61,974,270  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 59,831,762  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 57,682,635  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 55,456,626  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 53,100,341  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 50,556,859  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 47,846,370  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 45,063,127  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 42,250,231  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 39,154,918  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 35,875,085  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 32,435,276  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 28,242,389  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 24,017,538  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 19,721,288  Solution so far: 4,335,391 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 15,385,897  Solution so far: 4,552,402 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 10,833,495  Solution so far: 5,268,860 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,268,860
+
+Current sum is: 5,564,635  Solution so far: 5,564,635 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,564,635
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 5,268,860
+
+Current sum is: 5,268,860  Solution so far: 5,268,860 
+
+Value of maxIndex before adding: 17
+Value of maxIndex after adding: 16
+Root level: 
+Value of idx: 17
+Adding to the solution set: 4,552,402
+
+Current sum is: 9,821,262  Solution so far: 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Adding to the solution set: 4,335,391
+
+Current sum is: 14,156,653  Solution so far: 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 18,452,903  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 22,677,754  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 26,870,641  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 30,310,450  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 33,590,283  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 36,685,596  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 39,498,492  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 42,281,735  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 44,992,224  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 47,535,706  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 49,891,991  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 52,118,000  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 54,267,127  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 56,409,635  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 58,544,046  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 56,409,635  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 54,267,127  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 52,118,000  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 49,891,991  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 47,535,706  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 44,992,224  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 42,281,735  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 39,498,492  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 36,685,596  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 33,590,283  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 30,310,450  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 26,870,641  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 22,677,754  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 18,452,903  Solution so far: 4,296,250 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 14,156,653  Solution so far: 4,335,391 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 9,821,262  Solution so far: 4,552,402 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 5,268,860  Solution so far: 5,268,860 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 5,268,860
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 4,552,402
+
+Current sum is: 4,552,402  Solution so far: 4,552,402 
+
+Value of maxIndex before adding: 16
+Value of maxIndex after adding: 15
+Root level: 
+Value of idx: 16
+Adding to the solution set: 4,335,391
+
+Current sum is: 8,887,793  Solution so far: 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Adding to the solution set: 4,296,250
+
+Current sum is: 13,184,043  Solution so far: 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 17,408,894  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 21,601,781  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 25,041,590  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 28,321,423  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 31,416,736  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 34,229,632  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 37,012,875  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 39,723,364  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 42,266,846  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 44,623,131  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 46,849,140  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 48,998,267  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 51,140,775  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 53,275,186  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 51,140,775  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 48,998,267  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 46,849,140  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 44,623,131  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 42,266,846  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 39,723,364  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 37,012,875  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 34,229,632  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 31,416,736  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 28,321,423  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 25,041,590  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 21,601,781  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 17,408,894  Solution so far: 4,224,851 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 13,184,043  Solution so far: 4,296,250 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 8,887,793  Solution so far: 4,335,391 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 4,552,402  Solution so far: 4,552,402 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,552,402
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 4,335,391
+
+Current sum is: 4,335,391  Solution so far: 4,335,391 
+
+Value of maxIndex before adding: 15
+Value of maxIndex after adding: 14
+Root level: 
+Value of idx: 15
+Adding to the solution set: 4,296,250
+
+Current sum is: 8,631,641  Solution so far: 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Adding to the solution set: 4,224,851
+
+Current sum is: 12,856,492  Solution so far: 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 17,049,379  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 20,489,188  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 23,769,021  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 26,864,334  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 29,677,230  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 32,460,473  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 35,170,962  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 37,714,444  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 40,070,729  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 42,296,738  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 44,445,865  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 46,588,373  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 48,722,784  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 46,588,373  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 44,445,865  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 42,296,738  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 40,070,729  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 37,714,444  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 35,170,962  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 32,460,473  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 29,677,230  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 26,864,334  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 23,769,021  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 20,489,188  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 17,049,379  Solution so far: 4,192,887 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 12,856,492  Solution so far: 4,224,851 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 8,631,641  Solution so far: 4,296,250 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 4,335,391  Solution so far: 4,335,391 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,335,391
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 4,296,250
+
+Current sum is: 4,296,250  Solution so far: 4,296,250 
+
+Value of maxIndex before adding: 14
+Value of maxIndex after adding: 13
+Root level: 
+Value of idx: 14
+Adding to the solution set: 4,224,851
+
+Current sum is: 8,521,101  Solution so far: 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Adding to the solution set: 4,192,887
+
+Current sum is: 12,713,988  Solution so far: 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 16,153,797  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 19,433,630  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 22,528,943  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 25,341,839  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 28,125,082  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 30,835,571  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 33,379,053  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 35,735,338  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 37,961,347  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 40,110,474  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 42,252,982  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 44,387,393  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 42,252,982  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 40,110,474  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 37,961,347  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 35,735,338  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 33,379,053  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 30,835,571  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 28,125,082  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 25,341,839  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 22,528,943  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 19,433,630  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 16,153,797  Solution so far: 3,439,809 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 12,713,988  Solution so far: 4,192,887 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 8,521,101  Solution so far: 4,224,851 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 4,296,250  Solution so far: 4,296,250 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,296,250
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 4,224,851
+
+Current sum is: 4,224,851  Solution so far: 4,224,851 
+
+Value of maxIndex before adding: 13
+Value of maxIndex after adding: 12
+Root level: 
+Value of idx: 13
+Adding to the solution set: 4,192,887
+
+Current sum is: 8,417,738  Solution so far: 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Adding to the solution set: 3,439,809
+
+Current sum is: 11,857,547  Solution so far: 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 15,137,380  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 18,232,693  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 21,045,589  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 23,828,832  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 26,539,321  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 29,082,803  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 31,439,088  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 33,665,097  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 35,814,224  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 37,956,732  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 40,091,143  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 37,956,732  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 35,814,224  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 33,665,097  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 31,439,088  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 29,082,803  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 26,539,321  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 23,828,832  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 21,045,589  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 18,232,693  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 15,137,380  Solution so far: 3,279,833 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 11,857,547  Solution so far: 3,439,809 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 8,417,738  Solution so far: 4,192,887 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 4,224,851  Solution so far: 4,224,851 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,224,851
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 4,192,887
+
+Current sum is: 4,192,887  Solution so far: 4,192,887 
+
+Value of maxIndex before adding: 12
+Value of maxIndex after adding: 11
+Root level: 
+Value of idx: 12
+Adding to the solution set: 3,439,809
+
+Current sum is: 7,632,696  Solution so far: 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Adding to the solution set: 3,279,833
+
+Current sum is: 10,912,529  Solution so far: 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 14,007,842  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 16,820,738  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 19,603,981  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 22,314,470  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 24,857,952  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 27,214,237  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 29,440,246  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 31,589,373  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 33,731,881  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 35,866,292  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 33,731,881  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 31,589,373  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 29,440,246  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 27,214,237  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 24,857,952  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 22,314,470  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 19,603,981  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 16,820,738  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 14,007,842  Solution so far: 3,095,313 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 10,912,529  Solution so far: 3,279,833 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 7,632,696  Solution so far: 3,439,809 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 4,192,887  Solution so far: 4,192,887 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 4,192,887
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 3,439,809
+
+Current sum is: 3,439,809  Solution so far: 3,439,809 
+
+Value of maxIndex before adding: 11
+Value of maxIndex after adding: 10
+Root level: 
+Value of idx: 11
+Adding to the solution set: 3,279,833
+
+Current sum is: 6,719,642  Solution so far: 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Adding to the solution set: 3,095,313
+
+Current sum is: 9,814,955  Solution so far: 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 12,627,851  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 15,411,094  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 18,121,583  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 20,665,065  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 23,021,350  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 25,247,359  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 27,396,486  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 29,538,994  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 31,673,405  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 29,538,994  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 27,396,486  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 25,247,359  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 23,021,350  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 20,665,065  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 18,121,583  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 15,411,094  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 12,627,851  Solution so far: 2,812,896 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 9,814,955  Solution so far: 3,095,313 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 6,719,642  Solution so far: 3,279,833 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 3,439,809  Solution so far: 3,439,809 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,439,809
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 3,279,833
+
+Current sum is: 3,279,833  Solution so far: 3,279,833 
+
+Value of maxIndex before adding: 10
+Value of maxIndex after adding: 9
+Root level: 
+Value of idx: 10
+Adding to the solution set: 3,095,313
+
+Current sum is: 6,375,146  Solution so far: 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Adding to the solution set: 2,812,896
+
+Current sum is: 9,188,042  Solution so far: 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 11,971,285  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 14,681,774  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 17,225,256  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 19,581,541  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 21,807,550  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 23,956,677  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 26,099,185  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 28,233,596  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 26,099,185  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 23,956,677  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 21,807,550  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 19,581,541  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 17,225,256  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 14,681,774  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 11,971,285  Solution so far: 2,783,243 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 9,188,042  Solution so far: 2,812,896 3,095,313 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 6,375,146  Solution so far: 3,095,313 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 3,279,833  Solution so far: 3,279,833 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,279,833
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 3,095,313
+
+Current sum is: 3,095,313  Solution so far: 3,095,313 
+
+Value of maxIndex before adding: 9
+Value of maxIndex after adding: 8
+Root level: 
+Value of idx: 9
+Adding to the solution set: 2,812,896
+
+Current sum is: 5,908,209  Solution so far: 2,812,896 3,095,313 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Adding to the solution set: 2,783,243
+
+Current sum is: 8,691,452  Solution so far: 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 11,401,941  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 13,945,423  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 16,301,708  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 18,527,717  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 20,676,844  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 22,819,352  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 24,953,763  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 22,819,352  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 20,676,844  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 18,527,717  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 16,301,708  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 13,945,423  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 11,401,941  Solution so far: 2,710,489 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 8,691,452  Solution so far: 2,783,243 2,812,896 3,095,313 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 5,908,209  Solution so far: 2,812,896 3,095,313 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 3,095,313  Solution so far: 3,095,313 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 3,095,313
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 2,812,896
+
+Current sum is: 2,812,896  Solution so far: 2,812,896 
+
+Value of maxIndex before adding: 8
+Value of maxIndex after adding: 7
+Root level: 
+Value of idx: 8
+Adding to the solution set: 2,783,243
+
+Current sum is: 5,596,139  Solution so far: 2,783,243 2,812,896 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Adding to the solution set: 2,710,489
+
+Current sum is: 8,306,628  Solution so far: 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 10,850,110  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 13,206,395  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 15,432,404  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 17,581,531  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 19,724,039  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 21,858,450  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 19,724,039  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 17,581,531  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 15,432,404  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 13,206,395  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 10,850,110  Solution so far: 2,543,482 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,543,482
+
+Current sum is: 8,306,628  Solution so far: 2,710,489 2,783,243 2,812,896 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,710,489
+
+Current sum is: 5,596,139  Solution so far: 2,783,243 2,812,896 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,783,243
+
+Current sum is: 2,812,896  Solution so far: 2,812,896 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,812,896
+
+Current sum is: 0  Solution so far: 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+Root level: 
+Adding to the solution set: 2,783,243
+
+Current sum is: 2,783,243  Solution so far: 2,783,243 
+
+Value of maxIndex before adding: 7
+Value of maxIndex after adding: 6
+Root level: 
+Value of idx: 7
+Adding to the solution set: 2,710,489
+
+Current sum is: 5,493,732  Solution so far: 2,710,489 2,783,243 
+
+Value of maxIndex before adding: 6
+Value of maxIndex after adding: 5
+Adding to the solution set: 2,543,482
+
+Current sum is: 8,037,214  Solution so far: 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before adding: 5
+Value of maxIndex after adding: 4
+Adding to the solution set: 2,356,285
+
+Current sum is: 10,393,499  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before adding: 4
+Value of maxIndex after adding: 3
+Adding to the solution set: 2,226,009
+
+Current sum is: 12,619,508  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before adding: 3
+Value of maxIndex after adding: 2
+Adding to the solution set: 2,149,127
+
+Current sum is: 14,768,635  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before adding: 2
+Value of maxIndex after adding: 1
+Adding to the solution set: 2,142,508
+
+Current sum is: 16,911,143  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before adding: 1
+Value of maxIndex after adding: 0
+Adding to the solution set: 2,134,411
+
+Current sum is: 19,045,554  Solution so far: 2,134,411 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before adding: 0
+Value of maxIndex after adding: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,134,411
+
+Current sum is: 16,911,143  Solution so far: 2,142,508 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,142,508
+
+Current sum is: 14,768,635  Solution so far: 2,149,127 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,149,127
+
+Current sum is: 12,619,508  Solution so far: 2,226,009 2,356,285 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,226,009
+
+Current sum is: 10,393,499  Solution so far: 2,356,285 2,543,482 2,710,489 2,783,243 
+
+Value of maxIndex before removing: -1
+Value of maxIndex before removing: -1
+No more numbers left. . Backtracking...
+Removing from the solution set: 2,356,285
+
+Current sum is: 8,037,214  Solution so far: 2,

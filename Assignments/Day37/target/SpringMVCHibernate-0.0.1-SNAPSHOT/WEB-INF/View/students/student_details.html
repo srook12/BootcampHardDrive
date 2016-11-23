@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>Student Details</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/education.css" />
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+	var id = getParameterByName("id");
+	var mode = getParameterByName("mode");
+	var base_url, url;
+	
+	// Input holders
+	var first_name_input;
+	var last_name_input;
+	var sat_input;
+	var gpa_input;
+	var major_id_input;
+	
+	$(document).ready(function() {
+		// Input containers
+		var stu_first_name = $("#stu_first_name");
+		var stu_last_name = $("#stu_last_name");
+		var stu_sat = $("#stu_sat");
+		var stu_gpa = $("#stu_gpa");
+		var stu_major_id = $("#stu_major_id");
+		
+		// Create the inputs based on the mode
+		if(mode === "edit" || mode === "create") {		
+			first_name_input = $("<input id=\"first_name\" name=\"first_name\" type=\"text\" required />");
+			last_name_input = $("<input id=\"last_name\" name=\"last_name\" type=\"text\" required />");
+			sat_input = $("<input id=\"sat\" name=\"sat\" type=\"text\" /><div id=\"sat_error\" class=\"error_text\">*SAT score must be between 400 and 1600 inclusive or left blank</div>");
+			gpa_input = $("<input id=\"gpa\" name=\"gpa\" type=\"text\" required /><div id=\"gpa_error\" class=\"error_text\">*GPA must be between 0.0 and 4.0 inclusive</div>");	
+			major_id_input = $("<select id=\"major_id\" name=\"major_id\"></select>");
+			
+			
+		} else if (mode == "read") {
+			first_name_input = $("<label id=\"first_name\"></label>");
+			last_name_input = $("<label id=\"last_name\"></label>");
+			sat_input = $("<label id=\"sat\"></label>");
+			gpa_input = $("<label id=\"gpa\"></label>");
+			major_id_input = $("<label id=\"major_id\"></label>");
+			$("#button_row").remove();
+		}
+				
+		// Place input elements on HTML page
+		stu_first_name.append(first_name_input);
+		stu_last_name.append(last_name_input);
+		stu_sat.append(sat_input);
+		stu_gpa.append(gpa_input);
+		stu_major_id.append(major_id_input);
+		
+		// Initially hide all error messages
+		$("#sat_error").hide();
+		$("#gpa_error").hide();
+		
+		// Set URLs and buttons for creating a student and updating a student
+		if(mode == "create") {	
+			base_url = "http://localhost:8080/students/add_student/";
+			$("#buttons").append($("<input id=\"_button\" type= \"submit\" value=\"Create\" />"));
+			buildMajorDropdown();
+		} else if(mode == "edit") {
+			base_url = "http://localhost:8080/students/update_student/";
+			$("#buttons").append($("<input id=\"_button\" type= \"submit\" value=\"Update\" />"));
+		}
+		
+		// Get student information 		
+		if(mode === "edit" || mode === "read") {
+			$.ajax(
+				{url: "http://localhost:8080/students/student_info/" + id 
+			}).then(function(data) {
+				getStudentData(data);
+				
+				if(mode === "edit") {
+					if(data["major_id"] != null) { 
+						buildMajorDropdown(data["sat"], data["major_id"]["id"]);
+					} else {
+						buildMajorDropdown(data["sat"]);
+					}
+				}
+			})
+		}
+	})
+	
+	function getStudentData(data) {
+		var first_name = data["first_name"];
+		var last_name = data["last_name"];
+		var sat = data["sat"];
+		var gpa = data["gpa"];
+		var major_id = data["major_id"], major_description;
+	
+		if(mode === "edit") {
+			first_name_input.val(first_name);
+			last_name_input.val(last_name);
+			sat_input.val(sat);
+			gpa_input.val(gpa.toFixed(2));
+					
+			base_url += id + "/";
+		} else if(mode === "read"){
+			if(sat == null) {
+				sat = "N/A";
+			}
+			
+			if(major_id == null) {
+				major_description = "Undeclared";
+			} else {
+				major_description = major_id["description"]; 
+			}
+			
+			document.getElementById("first_name").innerHTML = first_name;
+			document.getElementById("last_name").innerHTML = last_name;
+			document.getElementById("sat").innerHTML = sat;
+			document.getElementById("gpa").innerHTML = gpa.toFixed(2);
+			document.getElementById("major_id").innerHTML = major_description;
+		}
+	}
+	
+	function buildMajorDropdown(sat, major_id) {
+		if(sat == null || sat == "") {
+			sat = 0;
+		}
+		
+		if(isSatValid(sat)) {
+					
+			$.ajax({url: "http://localhost:8080/majors/list_eligible_majors/" + sat
+				}).then(function(data) {
+					var select = document.getElementById("major_id");
+				
+					while ( select.childNodes.length >= 1 )
+					{
+					    select.removeChild(select.firstChild);       
+					}
+				
+					select.appendChild(new Option("Undeclared", "0"));
+					for(var idx = 0; idx < data.length; idx++) {
+						select.appendChild(new Option(data[idx]["description"] + " (" + data[idx]["req_sat"] + ")", data[idx]["id"]));
+						
+						if(major_id == data[idx]["id"]) {
+							select.value = major_id;
+						}
+					}	
+				})
+		
+			sat_input.change(function() {
+				sat = sat_input.val();
+				
+				var e = document.getElementById("major_id");
+				var major_id = e.options[e.selectedIndex].value;
+		
+				buildMajorDropdown(sat, major_id);
+			})
+		}
+	}
+
+	function getParameterByName(name, url) {
+    	if (!url) {
+    		url = window.location.href;
+    	}
+    	
+    	name = name.replace(/[\[\]]/g, "\\$&");
+    	var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    		
+    	if (!results) { 
+    		return null;
+    	}
+    	if (!results[2]) {
+    		return '';
+    	}
+    	
+    	return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	
+	function isSatValid(sat) {
+		return((sat >= 400 && sat <= 1600) || sat == 0);
+	}
+	
+	function validateForm() {
+		var valid = true;
+		var sat = $("#sat").val();
+		var gpa = $("#gpa").val();
+		
+		if(!isSatValid(sat)) {
+			$("#sat_error").show();
+			$("#sat").addClass("error_border");
+			valid = false;
+		} else {
+			$("#sat_error").hide();
+			$("#sat").removeClass("error_border");
+		}
+		
+		if(gpa < 0.0 || gpa > 4.0) {
+			$("#gpa_error").show();
+			$("#gpa").addClass("error_border");
+			valid = false;
+		} else {
+			$("#gpa_error").hide();
+			$("#gpa").removeClass("error_border");
+		}
+		
+		if(valid == true) {
+			submitForm();
+		}
+		
+		return false;
+	}
+	
+	function submitForm() {
+		var first_name = $("#first_name").val();
+		var last_name = $("#last_name").val();
+		var sat = $("#sat").val();
+		var gpa = $("#gpa").val();
+		
+		var e = document.getElementById("major_id");
+		var major_id = e.options[e.selectedIndex].value;
+				
+		if(sat === "") {
+			sat = 0;
+		}
+		
+		url = base_url + first_name + "/"
+		     + last_name + "/"
+		     + sat + "/"
+		     + gpa + "/"
+		     + major_id;
+				
+		$.ajax({url: url});
+		
+		window.location.href = "./student_list";
+	}
+	
+	
+//]]>
+</script>
+</head>
+<body>
+	<div class="container">
+		<form action="submitForm();" onsubmit="return validateForm();" method="get">
+			<table id="details_table" class="table table-bordered table-condensed">
+				<tbody>
+					<tr>
+						<td class="text-right body_font">First Name:</td>
+						<td id="stu_first_name" class="body_font"></td>
+					</tr>
+					<tr>
+						<td class="text-right body_font">Last Name:</td>
+						<td id="stu_last_name" class="body_font"></td>
+					</tr>
+					<tr>
+						<td class="text-right body_font">SAT Score:</td>
+						<td id="stu_sat" class="body_font"></td>
+					</tr>
+					<tr>
+						<td class="text-right body_font">GPA:</td>
+						<td id="stu_gpa" class="body_font"></td>
+					</tr>
+					<tr>
+						<td class="text-right body_font">Major:</td>
+						<td id="stu_major_id" class="body_font"></td>
+					</tr>
+					<tr id="button_row">
+						<td id="buttons" colspan="2" class="text-center"></td>
+					</tr>
+				</tbody>	
+			</table>
+		</form>
+		<br/>
+		<div class="row">
+			<div id="_link" class="col-sm-12 text-center"><a href="./student_list">Back to student listings</a></div>
+		</div>
+	
+	</div>
+</body>
+</html>

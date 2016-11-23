@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Major List</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/education.css" />
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function() {
+		$.ajax({
+			url: "http://localhost:8080/majors/list_majors"
+		}).then(function(data) {
+			build_table(data);	
+		});
+	})
+	
+	function build_table(data) {
+			var major_list = $("#major_list");
+			major_list.empty();
+					
+			for(var idx = 0; idx < data.length; idx++) {
+				var id = data[idx]["id"];
+				var description = data[idx]["description"];
+				var req_sat = data[idx]["req_sat"];
+															
+				var major_row = $("<tr>");
+				major_row.append($("<td class=\"text-right body_font\"><a href=\"./major_details?id=" + id + "&mode=read\">" + id + "</a></td>"));
+				major_row.append($("<td class=\"body_font\">" + description + "</td>"));
+				major_row.append($("<td class=\"text-right body_font\">" + req_sat + "</td>"));
+				major_row.append($("<td class=\"text-center\"><a href=\"./major_details?id=" + id + "&mode=edit\"><span class=\"glyphicon glyphicon-edit\"</span></a></td>"));
+				major_row.append($("<td class=\"text-center\"><button class=\"glyphicon glyphicon-remove del_major\" value=\"" + id +  "\"></button></td>"));
+				major_row.append($("</tr>"));
+								
+				major_list.append(major_row);	
+			}
+			
+			$(".del_major").click(function() {
+				var id = $(this).val();
+				
+				var proceed = confirm("Are you sure that you want to delete the major with id " + id + "?");
+				
+				if(proceed) {
+					$.ajax(
+						{url: "http://localhost:8080/majors/delete_major/" + id}
+					).then(function() {
+						$.ajax({
+							url: "http://localhost:8080/majors/list_majors"
+						}).then(function(data) {
+							build_table(data);
+						})
+					});
+				}
+			})
+		}
+//]]>
+</script>
+</head>
+<body>
+
+<div class="container">
+	<table id="list_table" class="table table-bordered table-condensed">
+		<thead>
+			<tr>
+				<th class="text-center head_font">ID</th>
+				<th class="text-center head_font">Description</th>
+				<th class="text-center head_font">Required SAT Score</th>
+				<th class="text-center head_font">Edit</th>
+				<th class="text-center head_font">Delete</th>
+			</tr>
+		</thead>
+		<tbody id="major_list">
+		
+		</tbody>	
+	</table>
+	
+	<br/>
+
+	<div class="row">
+		<div id="_link" class="col-sm-12 text-center"><a href="./major_details?mode=create">Add a Major</a></div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+random
+conspicuous
+arbitrary
+vivace
+allegro
+andante
+presto
+prestissimo
+largo
+largamente
+allegrande
+pesante

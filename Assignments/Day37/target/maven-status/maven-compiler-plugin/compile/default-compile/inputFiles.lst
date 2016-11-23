@@ -1,0 +1,16 @@
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\service\MajorService.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\dao\IMajorDao.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\entity\Major.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\dao\StudentDao.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\config\MvcConfigure.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\controller\MainController.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\service\IStudentService.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\dao\MajorDao.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\config\DbConfiguration.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\application\Application.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\controller\MajorController.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\dao\IStudentDao.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\service\IMajorService.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\controller\StudentController.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\service\StudentService.java
+C:\WS\default\SpringMVCHibernate\src\main\java\gov\ssa\entity\Student.java

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="StudentMod">
+<head>
+<meta charset="ISO-8859-1" />
+<title>Student Listing</title>
+<script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="student.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js" type="text/javascript"></script>
+<script src="student.js"></script>
+</head>
+<body ng-controller="StudentCtrl as ctrl">
+	<div class="container">
+	<table id="list_table" class="table table-bordered table-condensed">
+		<thead>
+			<tr class="head_style">
+				<th class="text-center">ID</th>
+				<th class="text-center">First Name</th>
+				<th class="text-center">Last Name</th>
+				<th class="text-center">SAT Score</th>
+				<th class="text-center head_styles">GPA</th>
+				<th class="text-center">Major</th>
+				<th class="text-center">Hide</th>
+			</tr>
+		</thead>
+		<tbody ng-repeat="student in ctrl.students">
+			<tr class="body_style">
+				<td ng-show="student.vis" class="text-right">{{student.id}}</td>
+				<td ng-show="student.vis">{{student.firstname}}</td>
+				<td ng-show="student.vis">{{student.lastname}}</td>
+				<td ng-show="student.vis" class="text-right">{{student.sat}}</td>
+				<td ng-show="student.vis" class="text-right">{{ctrl.printGpa(student.gpa);}}</td>
+				<td ng-show="student.vis" class="text-right">{{student.majorid}}</td>
+				<td ng-show="student.vis" class="text-center"><button ng-click="student.vis = false;">Hide</button></td>
+			</tr>	
+		</tbody>	
+	</table>	
+	<br/>
+	
+	<div class="row">
+		<div class="col-sm-10">&nbsp;</div>
+		<div class="col-sm-2 text-center"><button ng-click="ctrl.makeAllVisible();">Refresh</button></div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">&nbsp;</div>
+		<div class="col-sm-2 text-right"><label>SAT score &ge;</label></div>
+		<div class="col-sm-4"><input type="text" id="sat" /><button ng-click="ctrl.listSatAtLeast();">Show Students</button></div>
+	</div>
+</div>
+
+</body>
+</html>

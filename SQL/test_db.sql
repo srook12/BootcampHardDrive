@@ -1,0 +1,41 @@
+drop database test;
+create database test;
+use test;
+
+create table a (a1 int, a2 int);
+create table b (b1 int, b2 int, b3 int);
+create table c (c1 int, c2 int, c3 int);
+create table d (d1 int, d2 int);
+create table e (e1 int, e2 int);
+create table f (f1 int, f2 int, f3 int, f4 int, f5 int);
+create table g (g1 int, g2 int, g3 int, g4 int, g5 int);
+create table h (h1 int, h2 int, h3 int, h4 int);
+create table i (i1 int );
+create table j (j1 int, j2 int );
+create table k (k1 int );
+create table l (l1 int );
+
+alter table a add constraint primary key (a1);
+alter table b add constraint primary key (b1, b2);
+alter table c add constraint primary key (c1, c2);
+alter table d add constraint primary key (d1);
+alter table e add constraint primary key (e1);
+alter table f add constraint primary key (f1, f2, f3, f4);
+alter table g add constraint primary key (g1);
+alter table h add constraint primary key (h1, h2, h3);
+alter table i add constraint primary key (i1);
+alter table j add constraint primary key (j1, j2);
+alter table k add constraint primary key (k1);
+alter table l add constraint primary key (l1);
+
+alter table e add constraint foreign key (e2) references b(b1);
+alter table f add constraint foreign key (f5) references g(g1);
+alter table a add constraint foreign key (a2) references d(d1);
+alter table b add constraint foreign key (b3) references d(d1);
+alter table c add constraint foreign key (c3) references d(d1);
+alter table g add constraint foreign key (g2) references h(h1);
+alter table g add constraint foreign key (g3) references i(i1);
+alter table g add constraint foreign key (g4) references j(j1);
+alter table g add constraint foreign key (g5) references k(k1);
+alter table d add constraint foreign key (d2) references l(l1);
+alter table h add constraint foreign key (h4) references l(l1);

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>Javascript Review</title>
+<script>
+	var aVariable = 1;
+	var aString = "ABC";
+	var anArray = ['a', 'b', 'c'];
+	var anObject = {a: '1', b: '2', c: '3'};
+	
+	for(var ch in anArray) {
+		console.log(anArray[ch]);
+	}
+	
+	function aFunction(p1, p2, p3) {
+		
+	}
+	
+	var anotherFunction = function (p1, p2, p3) {
+		return p1+p2+p3;
+	}
+	
+	function btnClick() {
+		var text = document.getElementById("theText").value;
+		console.log(text);
+	}
+	
+	var abc = anotherFunction("A", "B", "C");
+</script>
+</head>
+<body>
+	<input type="text" id="theText" value="ABC" />
+	<button onclick="btnClick();">Get Text</button>
+</body>
+</html>

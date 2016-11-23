@@ -1,0 +1,77 @@
+body {
+  background-color: #E5E500;
+}
+
+div {
+  width:49%;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+#like {
+  background-color: #00B300;
+  color: #FFFFFF;
+}
+
+#dislike {
+  background-color: #E50000;
+  color: #FFFFFF;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+li {
+  font-size: 22px;
+}
+
+table, th, td {
+  background-color: #FFFFFF;
+  border:1px solid blue;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: left;
+}
+
+/* 1st column - bold the stdent name */
+tr td:nth-child(1) {
+  font-weight: bold;
+}
+
+/* 3rd column - display the supervisor's name in red */
+tr td:nth-child(3) {
+  color: red;
+}
+
+/* 4th column - date started is italicized */
+tr td:nth-child(4) {
+  font-style: italic;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+footer {
+  font-size: 12px;
+}

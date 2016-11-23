@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1" />
+<title>Student Details</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/education.css" />
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+	var id = getParameterByName("id");
+	var mode = getParameterByName("mode");
+	var base_url, url;
+	
+	// Input holders
+	var description_input;
+	var req_sat_input;
+	
+	$(document).ready(function() {
+		// Input containers
+		var major_description = $("#major_description");
+		var major_req_sat = $("#major_req_sat");
+				
+		// Create the inputs based on the mode
+		if(mode === "edit" || mode === "create") {		
+			description_input = $("<input id=\"description\" name=\"description\" type=\"text\" required />");
+			req_sat_input = $("<input id=\"req_sat\" name=\"req_sat\" type=\"text\" /><div id=\"req_sat_error\" class=\"error_text\">*Required SAT score must be between 400 and 1600 inclusive</div>");			
+		} else if (mode == "read") {
+			description_input = $("<label id=\"description\"></label>");
+			req_sat_input = $("<label id=\"req_sat\"></label>");
+			$("#button_row").remove();
+		}
+				
+		// Place input elements on HTML page
+		major_description.append(description_input);
+		major_req_sat.append(req_sat_input);
+		
+		// Initially hide all error messages
+		$("#req_sat_error").hide();
+		
+		// Set URLs and buttons for creating a student and updating a student
+		if(mode == "create") {	
+			base_url = "http://localhost:8080/majors/add_major/";
+			$("#buttons").append($("<input id=\"_button\" type= \"submit\" value=\"Create\" />"));
+		} else if(mode == "edit") {
+			base_url = "http://localhost:8080/majors/update_major/";
+			$("#buttons").append($("<input id=\"_button\" type= \"submit\" value=\"Update\" />"));
+		}
+		
+		// Get major information 		
+		if(mode === "edit" || mode === "read") {
+			$.ajax(
+				{url: "http://localhost:8080/majors/major_info/" + id 
+			}).then(function(data) {
+				getMajorData(data);					
+			})
+		}
+	})
+	
+	function getMajorData(data) {
+		var description = data["description"];
+		var req_sat = data["req_sat"];
+	
+		if(mode === "edit") {
+			description_input.val(description);
+			req_sat_input.val(req_sat);
+						
+			base_url += id + "/";
+		} else if(mode === "read"){			
+			document.getElementById("major_description").innerHTML = description;
+			document.getElementById("major_req_sat").innerHTML = req_sat;
+		}
+	}
+
+	function getParameterByName(name, url) {
+    	if (!url) {
+    		url = window.location.href;
+    	}
+    	
+    	name = name.replace(/[\[\]]/g, "\\$&");
+    	var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    		
+    	if (!results) { 
+    		return null;
+    	}
+    	if (!results[2]) {
+    		return '';
+    	}
+    	
+    	return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	
+	function validateForm() {
+		var valid = true;
+		var req_sat = $("#req_sat").val();
+			
+		if(req_sat < 400 || req_sat > 1600) {
+			$("#req_sat_error").show();
+			$("#req_sat").addClass("error_border");
+			valid = false;
+		} else {
+			$("#req_sat_error").hide();
+			$("#req_sat").removeClass("error_border");
+		}
+				
+		if(valid == true) {
+			submitForm();
+		}
+		
+		return false;
+	}
+	
+	function submitForm() {
+		var description = $("#description").val();
+		var req_sat = $("#req_sat").val();
+	
+		console.log(description);
+		console.log(req_sat);
+		
+		url = base_url + description + "/"
+		     + req_sat;
+				
+		$.ajax({url: url});
+		
+		window.location.href = "./major_list";
+	}
+	
+	
+//]]>
+</script>
+</head>
+<body>
+	<div class="container">
+		<form action="submitForm();" onsubmit="return validateForm();" method="get">
+			<table id="details_table" class="table table-bordered table-condensed">
+				<tbody>
+					<tr>
+						<td class="text-right body_font">Description:</td>
+						<td id="major_description" class="body_font"></td>
+					</tr>
+					<tr>
+						<td class="text-right body_font">Required SAT Score:</td>
+						<td id="major_req_sat" class="body_font"></td>
+					</tr>					
+					<tr id="button_row">
+						<td id="buttons" colspan="2" class="text-center"></td>
+					</tr>
+				</tbody>	
+			</table>
+		</form>
+		<br/>
+		<div class="row">
+			<div id="_link" class="col-sm-12 text-center"><a href="./major_list">Back to major listings</a></div>
+		</div>
+	
+	</div>
+</body>
+</html>

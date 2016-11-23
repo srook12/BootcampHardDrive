@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student List</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function() {
+		console.log("Loading document");
+		$.ajax({
+			url: "http://localhost:8080/students"
+		}).then(function(data) {
+			build_table(data);	
+			
+			$(".del_student").click(function() {
+				var id = $(this).val();
+				
+				$.ajax(
+					{url: "http://localhost:8080/delete_student/" + id}
+				).then(function() {
+					$.ajax({
+						url: "http://localhost:8080/students"
+					}).then(function(data) {
+						build_table(data);
+					})
+				});
+				
+				
+			})
+		});
+		
+		
+		
+	})
+	
+	function build_table(data) {
+		var student_list = $("#student_list");
+		student_list.empty();
+				
+		for(var idx = 0; idx < data.length; idx++) {
+			console.log(data[idx]["id"]);
+			var student_row = $("<div class=\"row\">");
+			student_row.append($("<div class=\"col-sm-2\">&nbsp;</div>"));		
+			student_row.append($("<div class=\"col-sm-1\">" + data[idx]["id"] + "</div>"));
+			student_row.append($("<div class=\"col-sm-1\">" + data[idx]["first_name"] + "</div>"));
+			student_row.append($("<div class=\"col-sm-1\">" + data[idx]["last_name"] + "</div>"));
+			student_row.append($("<div class=\"col-sm-1\">" + data[idx]["sat"] + "</div>"));
+			student_row.append($("<div class=\"col-sm-1\">" + data[idx]["gpa"] + "</div>"));
+			student_row.append($("<div class=\"col-sm-1\"><button class=\"glyphicon glyphicon-remove del_student\" value=\"" + data[idx]["id"] +  "\"></button></div>"));
+			//student_row.append($("<div class=\"col-sm-1\"><a id=\"up_student\" href=\"student_details?id=" + data[idx]["id"] + "&edit=true\"><span class=\"glyphicon glyphicon-edit\"</span></a></div>"))
+			student_row.append($("</div>"));
+			
+			student_list.append(student_row);	
+		}
+	}
+	
+//]]>
+</script>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-sm-2">&nbsp;</div>
+		<div class="col-sm-1">ID</div>
+		<div class="col-sm-1">First</div>
+		<div class="col-sm-1">Last</div>
+		<div class="col-sm-1">SAT</div>
+		<div class="col-sm-1">GPA</div>
+		<div class="col-sm-5">&nbsp;</div>
+	</div>
+	<div id="student_list">
+	
+	</div>	
+</div>
+
+</body>
+</html>
